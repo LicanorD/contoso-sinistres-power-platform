@@ -1,0 +1,109 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "training_SinistresDataverse"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "training_SinistresCourriel"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "Sinistres - Adresse d'envoi des notifications (training_SinistresAdressedenvoidesnotifications)": {
+          "defaultValue": "igor.doussot@gmail.com",
+          "type": "String",
+          "metadata": {
+            "schemaName": "training_SinistresAdressedenvoidesnotifications"
+          }
+        }
+      },
+      "triggers": {
+        "Lorsqu’une_ligne_est_ajoutée,_modifiée_ou_supprimée": {
+          "metadata": {
+            "operationMetadataId": "87a63eed-0f43-4bc7-8b28-80446ca6bf24"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "training_sinistre",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "training_statutdusinistre"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Obtenir_une_ligne_par_ID": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "aba46e2d-1a2e-4569-87c1-b19ec60defb8"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "training_sinistres",
+              "recordId": "@triggerOutputs()?['body/_training_assure_value']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        },
+        "Envoyer_un_e-mail_(V2)": {
+          "runAfter": {
+            "Obtenir_une_ligne_par_ID": [
+              "Succeeded"
+            ]
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "emailMessage/To": "@parameters('Sinistres - Adresse d''envoi des notifications (training_SinistresAdressedenvoidesnotifications)')",
+              "emailMessage/Subject": "Votre dossier @{outputs('Obtenir_une_ligne_par_ID')?['body/_training_contrat_value']} : nouveau statut",
+              "emailMessage/Body": "<p class=\"editor-paragraph\">@{outputs('Obtenir_une_ligne_par_ID')?['body/training_statutdusinistre']}</p>",
+              "emailMessage/Importance": "Normal"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+              "operationId": "SendEmailV2",
+              "connectionName": "shared_office365"
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

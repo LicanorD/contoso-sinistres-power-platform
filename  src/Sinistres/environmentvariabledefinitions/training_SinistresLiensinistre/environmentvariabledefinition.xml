@@ -1,0 +1,11 @@
+<environmentvariabledefinition schemaname="training_SinistresLiensinistre">
+  <defaultvalue>https://org061429be.crm12.dynamics.com/main.aspx?appid=62077b05-c3c7-f111-a05a-00224838d660&amp;pagetype=entityrecord&amp;etn=training_sinistre&amp;id=</defaultvalue>
+  <displayname default="Sinistres - Lien sinistre">
+    <label description="Sinistres - Lien sinistre" languagecode="1036" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

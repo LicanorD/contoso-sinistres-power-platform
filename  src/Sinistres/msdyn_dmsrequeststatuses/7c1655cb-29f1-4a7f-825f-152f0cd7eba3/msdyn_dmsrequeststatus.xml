@@ -1,0 +1,14 @@
+<msdyn_dmsrequeststatus msdyn_dmsrequeststatusid="7c1655cb-29f1-4a7f-825f-152f0cd7eba3">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_errordetails>{"Version":"1.0","RequestErrorMessage":null,"RequestErrorCulprit":"User","EntityErrorDetails":[{"EntityName":"table","EntityErrorCulprit":"User","TaskErrors":[{"ErrorCode":-2147220890,"ErrorCodeHex":"0x80040266","ErrorName":"InvalidPrimaryKey","ErrorMessage":"Camille Martin is not a valid primary id Guid value.","StatusCode":400,"OperationName":"RecordTransformation","ServiceRequestId":"00000000-0000-0000-0000-000000000000","ApiRequestId":"00000000-0000-0000-0000-000000000000","HelpLink":null,"InnerErrorMessage":null,"Culprit":"User","Identifier":"training_contratid eq null","IsSelfReferenceUpdateError":false,"ErrorLevel":"Task","ExceptionDetail":null,"RequestTimeUtc":"2026-10-26T12:53:25.15112+00:00","RequestPayload":"{\"training_formule\": \"960740000\",\"training_contact.training_contactid\": \"Camille Martin\",\"training_contratname\": \"C-2024-101\",\"training_datedeffet\": \"12/31/2022 23:00:00\"}"}]}],"RetryAfter":null}</msdyn_errordetails>
+  <msdyn_lookupfield_uploadrequest>
+    <msdyn_dmsrequestid>24bf857b-4925-4d91-8eb1-e83dadb0c42a</msdyn_dmsrequestid>
+  </msdyn_lookupfield_uploadrequest>
+  <msdyn_uploadendtime>10/26/2026 11:53:25 AM</msdyn_uploadendtime>
+  <msdyn_uploadstarttime>10/26/2026 11:53:24 AM</msdyn_uploadstarttime>
+  <msdyn_uploadstatus>PermanentFailed</msdyn_uploadstatus>
+  <msdyn_uploadstatusdetails>{"Version":"1.0","EntityStatusDetails":[{"EntityName":"table","EntityId":"98c45d4a-db16-4193-b2ac-e367f450d5a2","Status":"Failed","StartTime":"2026-10-26T12:53:24.7193688+00:00","EndTime":"2026-10-26T12:53:25.1516309+00:00","CreatedRecords":0,"UpdatedRecords":0,"DeletedRecords":0,"ErrorRecords":1}]}</msdyn_uploadstatusdetails>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <timezoneruleversionnumber>0</timezoneruleversionnumber>
+</msdyn_dmsrequeststatus>

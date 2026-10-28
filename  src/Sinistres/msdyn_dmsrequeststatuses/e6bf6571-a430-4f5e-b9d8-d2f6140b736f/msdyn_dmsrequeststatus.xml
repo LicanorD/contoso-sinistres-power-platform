@@ -1,0 +1,14 @@
+<msdyn_dmsrequeststatus msdyn_dmsrequeststatusid="e6bf6571-a430-4f5e-b9d8-d2f6140b736f">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_errordetails>{"Version":"1.0","RequestErrorMessage":null,"RequestErrorCulprit":"User","EntityErrorDetails":[{"EntityName":"table","EntityErrorCulprit":"User","TaskErrors":[{"ErrorCode":-2147220890,"ErrorCodeHex":"0x80040266","ErrorName":"InvalidPrimaryKey","ErrorMessage":"C-2024-101 is not a valid primary id Guid value.","StatusCode":400,"OperationName":"RecordTransformation","ServiceRequestId":"00000000-0000-0000-0000-000000000000","ApiRequestId":"00000000-0000-0000-0000-000000000000","HelpLink":null,"InnerErrorMessage":null,"Culprit":"User","Identifier":"training_sinistreid eq null","IsSelfReferenceUpdateError":false,"ErrorLevel":"Task","ExceptionDetail":null,"RequestTimeUtc":"2026-10-26T11:53:11.2485186+00:00","RequestPayload":"{\"statecode\": \"\",\"training_contrat.training_contratid\": \"C-2024-101\",\"training_typedesinistre.training_typedesinistreid\": \"Dégât des eaux\",\"training_datededeclaration\": \"10/19/2026 22:00:00\",\"training_datedesurvenance\": \"10/19/2026 22:00:00\",\"training_description\": \"Fuite sous l'évier de la cuisine, parquet gondolé\",\"training_montantaccorde\": \"\",\"training_montantestime\": \"\"}"}]}],"RetryAfter":null}</msdyn_errordetails>
+  <msdyn_lookupfield_uploadrequest>
+    <msdyn_dmsrequestid>92d18420-a531-4f14-9fee-c9e0968995fd</msdyn_dmsrequestid>
+  </msdyn_lookupfield_uploadrequest>
+  <msdyn_uploadendtime>10/26/2026 10:53:11 AM</msdyn_uploadendtime>
+  <msdyn_uploadstarttime>10/26/2026 10:53:10 AM</msdyn_uploadstarttime>
+  <msdyn_uploadstatus>PermanentFailed</msdyn_uploadstatus>
+  <msdyn_uploadstatusdetails>{"Version":"1.0","EntityStatusDetails":[{"EntityName":"table","EntityId":"e9863181-efc2-4f16-85db-d00a6c662893","Status":"Failed","StartTime":"2026-10-26T11:53:10.6804176+00:00","EndTime":"2026-10-26T11:53:11.2497937+00:00","CreatedRecords":0,"UpdatedRecords":0,"DeletedRecords":0,"ErrorRecords":1}]}</msdyn_uploadstatusdetails>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <timezoneruleversionnumber>0</timezoneruleversionnumber>
+</msdyn_dmsrequeststatus>

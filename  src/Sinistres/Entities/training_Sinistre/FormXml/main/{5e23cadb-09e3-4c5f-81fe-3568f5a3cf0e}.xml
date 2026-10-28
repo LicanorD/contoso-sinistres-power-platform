@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5e23cadb-09e3-4c5f-81fe-3568f5a3cf0e}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{DD78E645-72E9-4BC3-B352-950D05447454}" IsUserDefined="1" name="Sinistre">
+          <labels>
+            <label description="Sinistre" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{1DB68450-7354-420E-9981-DBF7692F4D18}" name="Sinistre">
+                  <labels>
+                    <label description="Sinistre" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{D0722FCE-0704-4BAC-9E12-A51A5FD6B776}">
+                        <labels>
+                          <label description="" languagecode="1036" />
+                        </labels>
+                        <control id="training_sinistrename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="training_SinistreName" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{26c1656f-636b-4fa2-a5ce-70b83cc58cee}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Numéro" languagecode="1036" />
+                        </labels>
+                        <control id="training_numero" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="training_numero" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e02d987b-84bc-4d2a-8d07-9873d1892151}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contrat" languagecode="1036" />
+                        </labels>
+                        <control id="training_contrat" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="training_contrat" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ab6b0343-00fe-4079-9422-49d27f934334}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Sinistre Name" languagecode="1036" />
+                        </labels>
+                        <control id="training_sinistrename" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="training_sinistrename" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{666bc21e-77b2-4243-b577-2976ebe179db}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Type de sinistre" languagecode="1036" />
+                        </labels>
+                        <control id="training_typedesinistre" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="training_typedesinistre" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5f3ec5ba-c90d-41d8-b472-b43b035e7eae}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Description" languagecode="1036" />
+                        </labels>
+                        <control id="training_description" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="training_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{da0e4bdf-a534-4ae0-a6cb-f3298052b2b0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date de déclaration" languagecode="1036" />
+                        </labels>
+                        <control id="training_datededeclaration" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="training_datededeclaration" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4958c764-74bd-4499-8f21-a7979e592b5f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date de survenance" languagecode="1036" />
+                        </labels>
+                        <control id="training_datedesurvenance" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="training_datedesurvenance" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2a934548-f4dd-41ad-8c81-21a6afe4e44d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Délai depuis la déclaration" languagecode="1036" />
+                        </labels>
+                        <control id="training_delaidepuisladeclaration" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="training_delaidepuisladeclaration" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="contratview_section" id="d72f74e5-2a69-4cf7-a58e-8b81bb65d313" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Vue Contrat" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{c602f7e1-8aa4-427a-b3a0-d2f0e073d00f}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Vue Contrat" languagecode="1036" />
+                        </labels>
+                        <control id="contrat_view" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="training_contrat">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="training_contrat"&gt;160f10ae-e7d1-f111-a05b-00224838d660&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Financier" id="2cbd0c40-cb92-4a3c-a140-12e6be630596" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Données financières" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Montants_section" id="baefc847-1637-4e7a-99bf-3cfe6c687730" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Montants" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{92b61fae-2a46-40ec-8b72-727b855cdc10}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Montant accordé" languagecode="1036" />
+                        </labels>
+                        <control id="training_montantaccorde" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="training_montantaccorde" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{99833377-ecbb-49d5-a5d5-47ee031d9f47}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Montant estimé" languagecode="1036" />
+                        </labels>
+                        <control id="training_montantestime" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="training_montantestime" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Statut" id="fff2bc8d-a067-44bf-809f-72fb6c2e0ef1" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Statut" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Statuts_section" id="c2856a75-5cd4-4fe2-bd5f-90e74d72de6e" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Statuts" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{41edde4e-50cb-4488-9b49-2e4c15012295}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Statut du sinistre" languagecode="1036" />
+                        </labels>
+                        <control id="training_statutdusinistre" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="training_statutdusinistre" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46d2b13a-1113-43c4-9456-4938984eede9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Raison du statut" languagecode="1036" />
+                        </labels>
+                        <control id="statuscode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca2be736-975d-40aa-bd2a-2df4814e16c4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modifié le" languagecode="1036" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{F8186995-E9F8-43F6-8BAF-F09627348DFA}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Propriétaire" languagecode="1036" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2c7fdb2a-6559-491b-be5c-396475a6e002}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b1a13490-1629-4e34-9310-f359e8244bb7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{a34af576-4926-4390-83d0-b2efd34ef54c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{47860e68-9b4e-4db3-bcae-394471c0b54c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{253f183d-7808-4ccf-a14e-fbe572886688}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b04dbcdd-7a12-49e3-847c-b00710646fee}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{884db4b8-8211-4c32-bb7c-be085f9dae6b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{1c42e427-ed67-4084-81fc-869df913b0bd}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informations" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Formulaire pour cette entité." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,14 @@
+<msdyn_dmsrequeststatus msdyn_dmsrequeststatusid="3757b87a-2be7-4b09-ad30-e5eeaf87e62b">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_errordetails>{"Version":"1.0","RequestErrorMessage":null,"RequestErrorCulprit":"User","EntityErrorDetails":[{"EntityName":"table","EntityErrorCulprit":"User","TaskErrors":[{"ErrorCode":-2147086331,"ErrorCodeHex":"0x80061005","ErrorName":"OptionSetValidationFailed","ErrorMessage":"Table training_contrat field training_formule is a training_contrat_training_formule Choice data type. The value Essentiel is not a valid value for the training_formule choice field.","StatusCode":400,"OperationName":"RecordTransformation","ServiceRequestId":"00000000-0000-0000-0000-000000000000","ApiRequestId":"00000000-0000-0000-0000-000000000000","HelpLink":null,"InnerErrorMessage":null,"Culprit":"User","Identifier":"training_contratid eq null","IsSelfReferenceUpdateError":false,"ErrorLevel":"Task","ExceptionDetail":null,"RequestTimeUtc":"2026-10-26T12:12:24.3176013+00:00","RequestPayload":"{\"training_formule\": \"Essentiel\",\"training_contact.training_contactid\": \"Camille Martin\",\"training_datedeffet\": \"12/31/2022 23:00:00\",\"training_statut\": \"Actif\"}"}]}],"RetryAfter":null}</msdyn_errordetails>
+  <msdyn_lookupfield_uploadrequest>
+    <msdyn_dmsrequestid>0615d547-afd2-4127-948e-34054774053d</msdyn_dmsrequestid>
+  </msdyn_lookupfield_uploadrequest>
+  <msdyn_uploadendtime>10/26/2026 11:12:24 AM</msdyn_uploadendtime>
+  <msdyn_uploadstarttime>10/26/2026 11:12:23 AM</msdyn_uploadstarttime>
+  <msdyn_uploadstatus>PermanentFailed</msdyn_uploadstatus>
+  <msdyn_uploadstatusdetails>{"Version":"1.0","EntityStatusDetails":[{"EntityName":"table","EntityId":"591a635d-8ecb-45b2-891c-b6dbd6f5d2d8","Status":"Failed","StartTime":"2026-10-26T12:12:23.7013141+00:00","EndTime":"2026-10-26T12:12:24.3180387+00:00","CreatedRecords":0,"UpdatedRecords":0,"DeletedRecords":0,"ErrorRecords":1}]}</msdyn_uploadstatusdetails>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <timezoneruleversionnumber>0</timezoneruleversionnumber>
+</msdyn_dmsrequeststatus>

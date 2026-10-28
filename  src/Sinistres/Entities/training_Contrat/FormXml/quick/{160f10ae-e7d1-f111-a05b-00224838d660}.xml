@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{160f10ae-e7d1-f111-a05b-00224838d660}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="resume_contrat_tab" showlabel="false" labelid="{5a391efc-5557-4311-bc3b-6bdd997250d5}">
+          <labels>
+            <label description="Résumé du contrat" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="resume_contrat" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{e441d61d-d309-4e4b-9e1d-80c389879c15}">
+                  <labels>
+                    <label description="Résumé du contrat" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{45616ac5-eeb8-47fc-a42c-75adb487ea83}">
+                        <labels>
+                          <label description="" languagecode="1036" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{581d6562-6c89-4d01-bb4e-3d32c090608c}" locklevel="0" colspan="1" rowspan="1" labelid="{209d6e08-8445-4749-9bdf-46929be885f9}">
+                        <labels>
+                          <label description="Numéro" languagecode="1036" />
+                        </labels>
+                        <control id="training_contratname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="training_contratname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{adf4990e-312a-4bbf-bdec-7b2d79c8bbb3}" locklevel="0" colspan="1" rowspan="1" labelid="{ba4da854-960e-4c48-84b0-202f066fa4c7}">
+                        <labels>
+                          <label description="Formule" languagecode="1036" />
+                        </labels>
+                        <control id="training_formule" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="training_formule" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bad14f88-5c8e-4819-8b0e-88b920415f1c}" locklevel="0" colspan="1" rowspan="1" labelid="{3d251e95-bd75-485b-8ec1-310405daff48}">
+                        <labels>
+                          <label description="Date d'effet" languagecode="1036" />
+                        </labels>
+                        <control id="training_datedeffet" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="training_datedeffet" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{08896b72-2e92-4ca0-a770-0ab0aa0c1278}" locklevel="0" colspan="1" rowspan="1" labelid="{152c0e66-27d8-4a68-821d-d575aba46555}">
+                        <labels>
+                          <label description="Contact" languagecode="1036" />
+                        </labels>
+                        <control id="training_contact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="training_contact" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Résumé du contrat" languagecode="1036" />
+    </LocalizedNames>
+  </systemform>
+</forms>

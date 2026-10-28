@@ -1,0 +1,14 @@
+<msdyn_dmsrequeststatus msdyn_dmsrequeststatusid="919980f4-f1cd-48a3-bbbc-959e465b3361">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_errordetails>{"Version":"1.0","RequestErrorMessage":null,"RequestErrorCulprit":null,"EntityErrorDetails":[{"EntityName":"table","EntityErrorCulprit":"None","TaskErrors":[]}],"RetryAfter":null}</msdyn_errordetails>
+  <msdyn_lookupfield_uploadrequest>
+    <msdyn_dmsrequestid>279d5420-71d3-46ad-b492-db771d2a64b9</msdyn_dmsrequestid>
+  </msdyn_lookupfield_uploadrequest>
+  <msdyn_uploadendtime>10/26/2026 11:00:36 AM</msdyn_uploadendtime>
+  <msdyn_uploadstarttime>10/26/2026 11:00:35 AM</msdyn_uploadstarttime>
+  <msdyn_uploadstatus>Succeeded</msdyn_uploadstatus>
+  <msdyn_uploadstatusdetails>{"Version":"1.0","EntityStatusDetails":[{"EntityName":"table","EntityId":"45c1ec16-dd53-4543-89f8-3addcd3710fa","Status":"Succeeded","StartTime":"2026-10-26T12:00:35.4430598+00:00","EndTime":"2026-10-26T12:00:36.4858505+00:00","CreatedRecords":10,"UpdatedRecords":0,"DeletedRecords":0,"ErrorRecords":0}]}</msdyn_uploadstatusdetails>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <timezoneruleversionnumber>0</timezoneruleversionnumber>
+</msdyn_dmsrequeststatus>

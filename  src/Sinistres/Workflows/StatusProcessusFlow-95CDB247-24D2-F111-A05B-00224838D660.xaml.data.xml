@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{95cdb247-24d2-f111-a05b-00224838d660}" Name="Status Processus Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/StatusProcessusFlow-95CDB247-24D2-F111-A05B-00224838D660.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>training_statusprocessus</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <ModernFlowType>0</ModernFlowType>
+  <PrimaryEntity>training_Sinistre</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1036" description="Status Processus Flow" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{3d42175b-a015-479d-95d0-73988b908c51}">
+      <label languagecode="1036" description="Déclaré" />
+    </steplabels>
+    <steplabels id="{966a74d8-f218-4bcc-b69a-45f9e4997f46}">
+      <label languagecode="1036" description="Contrat" />
+    </steplabels>
+    <steplabels id="{497fcee8-fa21-4fc1-b9d2-ab3b75ce80eb}">
+      <label languagecode="1036" description="Type de sinistre" />
+    </steplabels>
+    <steplabels id="{658e656a-2607-47ce-82d3-fc0b62c7d46c}">
+      <label languagecode="1036" description="Date de survenance" />
+    </steplabels>
+    <steplabels id="{965c1561-60bf-46ac-82bb-3d9ba8819f63}">
+      <label languagecode="1036" description="Expertise" />
+    </steplabels>
+    <steplabels id="{8de013d1-412c-4b75-a34b-6f4ad45ff954}">
+      <label languagecode="1036" description="Description" />
+    </steplabels>
+    <steplabels id="{0b036cc5-7ec9-4e7f-bc5d-7448a79401e7}">
+      <label languagecode="1036" description="Instruction" />
+    </steplabels>
+    <steplabels id="{b73d3b79-b981-4201-a41f-a40f7d8da458}">
+      <label languagecode="1036" description="Montant estimé" />
+    </steplabels>
+    <steplabels id="{6ad83247-6f1a-4b3f-bd07-80e23aea1c56}">
+      <label languagecode="1036" description="Décision" />
+    </steplabels>
+    <steplabels id="{9b1d9441-2ce5-4017-a1f7-ed39fa8745ab}">
+      <label languagecode="1036" description="Montant accordé" />
+    </steplabels>
+    <steplabels id="{59ee15f1-6ade-4fdc-a393-28daab5eccb7}">
+      <label languagecode="1036" description="Clôturé" />
+    </steplabels>
+    <steplabels id="{1259142e-91e3-439b-9c8f-121d994e82bd}">
+      <label languagecode="1036" description="Statut du sinistre" />
+    </steplabels>
+  </labels>
+</Workflow>

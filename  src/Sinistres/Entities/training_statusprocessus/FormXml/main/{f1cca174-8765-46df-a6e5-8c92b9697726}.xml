@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f1cca174-8765-46df-a6e5-8c92b9697726}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{3d42175b-a015-479d-95d0-73988b908c51}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{4b4b785c-8d73-4359-ab1b-5666c32ffa71}">
+          <labels>
+            <label description="Déclaré" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{46f0dcca-783e-0771-afd0-48bc698b5d4b}" name="StageStep3_section1" labelid="{ca927e57-95e6-4fbd-b36d-be5d1d6ec57a}">
+                  <labels>
+                    <label description="Déclaré" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{966a74d8-f218-4bcc-b69a-45f9e4997f46}" showlabel="true" visible="true" labelid="{8e537277-a201-4a66-aef1-772cc3fd617d}">
+                        <labels>
+                          <label description="Contrat" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_contrat" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="training_contrat" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{497fcee8-fa21-4fc1-b9d2-ab3b75ce80eb}" showlabel="true" visible="true" labelid="{17534a8f-2e2f-47f3-8fa3-1745c4438cad}">
+                        <labels>
+                          <label description="Type de sinistre" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_typedesinistre" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="training_typedesinistre" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{658e656a-2607-47ce-82d3-fc0b62c7d46c}" showlabel="true" visible="true" labelid="{71b07e4c-a077-48d4-a644-e3479cf9f20e}">
+                        <labels>
+                          <label description="Date de survenance" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="training_description" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{965c1561-60bf-46ac-82bb-3d9ba8819f63}" name="StageStep11" locklevel="0" expanded="true" visible="false" labelid="{9217197a-ff54-4849-a790-a8a9e9787f4f}">
+          <labels>
+            <label description="Expertise" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{9c10cb06-83bc-0aae-cdac-7814ce660d05}" name="StageStep11_section1" labelid="{b00f2b92-e9c3-4eb0-935b-1fbf2424ee60}">
+                  <labels>
+                    <label description="Expertise" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8de013d1-412c-4b75-a34b-6f4ad45ff954}" showlabel="true" visible="true" labelid="{0af129be-5cb8-4945-993e-7717a636ce4b}">
+                        <labels>
+                          <label description="Description" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="training_description" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{0b036cc5-7ec9-4e7f-bc5d-7448a79401e7}" name="StageStep15" locklevel="0" expanded="true" visible="false" labelid="{b6419159-efcc-4ca4-a139-4b6655d19c97}">
+          <labels>
+            <label description="Instruction" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{955050fe-4c8c-151c-57a0-680677d468f6}" name="StageStep15_section1" labelid="{9adeb6a6-8d98-4266-ae71-a3d0751b0cf3}">
+                  <labels>
+                    <label description="Instruction" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b73d3b79-b981-4201-a41f-a40f7d8da458}" showlabel="true" visible="true" labelid="{179e20f7-734f-493c-a421-5cebc062fe85}">
+                        <labels>
+                          <label description="Montant estimé" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_montantestime" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="training_montantestime" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{6ad83247-6f1a-4b3f-bd07-80e23aea1c56}" name="StageStep19" locklevel="0" expanded="true" visible="false" labelid="{63f7c1ed-f3af-4c22-badb-a331fe7ba269}">
+          <labels>
+            <label description="Décision" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{f34e66d1-3cc0-da76-5a28-2b4dcf6af7f6}" name="StageStep19_section1" labelid="{b4807bda-2a03-4e17-a183-8d7190d48745}">
+                  <labels>
+                    <label description="Décision" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9b1d9441-2ce5-4017-a1f7-ed39fa8745ab}" showlabel="true" visible="true" labelid="{972b8930-90cb-4bd0-8f04-98aaee790dcd}">
+                        <labels>
+                          <label description="Montant accordé" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_montantaccorde" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="training_montantaccorde" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{59ee15f1-6ade-4fdc-a393-28daab5eccb7}" name="StageStep23" locklevel="0" expanded="true" visible="false" labelid="{78d7458d-b587-48e3-a310-207a9c647778}">
+          <labels>
+            <label description="Clôturé" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{7eb8cae6-a752-68ba-015a-5e6e539ebb74}" name="StageStep23_section1" labelid="{69c666cb-69aa-4f82-825c-187392e73843}">
+                  <labels>
+                    <label description="Clôturé" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1259142e-91e3-439b-9c8f-121d994e82bd}" showlabel="true" visible="true" labelid="{8464fa1b-99cc-4b6c-b077-4a3820e246bd}">
+                        <labels>
+                          <label description="Statut du sinistre" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_statutdusinistre" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="training_statutdusinistre" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informations" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Formulaire pour cette entité." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

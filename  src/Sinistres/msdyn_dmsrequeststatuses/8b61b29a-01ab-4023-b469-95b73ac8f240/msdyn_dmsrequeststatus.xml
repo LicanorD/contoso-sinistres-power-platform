@@ -1,0 +1,14 @@
+<msdyn_dmsrequeststatus msdyn_dmsrequeststatusid="8b61b29a-01ab-4023-b469-95b73ac8f240">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_errordetails>{"Version":"1.0","RequestErrorMessage":null,"RequestErrorCulprit":"User","EntityErrorDetails":[{"EntityName":"table","EntityErrorCulprit":"User","TaskErrors":[{"ErrorCode":-2147086331,"ErrorCodeHex":"0x80061005","ErrorName":"OptionSetValidationFailed","ErrorMessage":"Table training_contrat field training_formule is a training_contrat_training_formule Choice data type. The value Essentiel is not a valid value for the training_formule choice field.","StatusCode":400,"OperationName":"RecordTransformation","ServiceRequestId":"00000000-0000-0000-0000-000000000000","ApiRequestId":"00000000-0000-0000-0000-000000000000","HelpLink":null,"InnerErrorMessage":null,"Culprit":"User","Identifier":"training_contratid eq null","IsSelfReferenceUpdateError":false,"ErrorLevel":"Task","ExceptionDetail":null,"RequestTimeUtc":"2026-10-26T12:24:54.1642768+00:00","RequestPayload":"{\"training_formule\": \"Essentiel\",\"training_datedeffet\": \"12/31/2022 23:00:00\",\"training_numero\": \"C-2024-101\",\"training_statut\": \"Actif\"}"}]}],"RetryAfter":null}</msdyn_errordetails>
+  <msdyn_lookupfield_uploadrequest>
+    <msdyn_dmsrequestid>a27bb6f0-22a7-42d8-b6da-a71ad9d84a83</msdyn_dmsrequestid>
+  </msdyn_lookupfield_uploadrequest>
+  <msdyn_uploadendtime>10/26/2026 11:24:54 AM</msdyn_uploadendtime>
+  <msdyn_uploadstarttime>10/26/2026 11:24:53 AM</msdyn_uploadstarttime>
+  <msdyn_uploadstatus>PermanentFailed</msdyn_uploadstatus>
+  <msdyn_uploadstatusdetails>{"Version":"1.0","EntityStatusDetails":[{"EntityName":"table","EntityId":"813a183c-df6d-4f57-899f-c50c519177ee","Status":"Failed","StartTime":"2026-10-26T12:24:53.6651256+00:00","EndTime":"2026-10-26T12:24:54.1651108+00:00","CreatedRecords":0,"UpdatedRecords":0,"DeletedRecords":0,"ErrorRecords":1}]}</msdyn_uploadstatusdetails>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <timezoneruleversionnumber>0</timezoneruleversionnumber>
+</msdyn_dmsrequeststatus>

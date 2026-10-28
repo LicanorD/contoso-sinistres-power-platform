@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c1d0b72c-a120-4c66-b058-f4d4cc94766e}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{01092173-3351-4596-9050-82E6AE095084}" IsUserDefined="1">
+          <labels>
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{D481DA4A-AD04-42B2-B262-00F1C97744AD}">
+                  <labels>
+                    <label description="Général" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{58D1E58A-26FA-44DE-A799-854B1465150D}">
+                        <labels>
+                          <label description="" languagecode="1036" />
+                        </labels>
+                        <control id="training_contratname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="training_ContratName" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{FFBAA406-6048-478E-9F3C-6532F7EF806F}">
+                        <labels>
+                          <label description="Propriétaire" languagecode="1036" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{924ecc24-38ff-48a7-91d9-14e6e3e88286}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Numéro" languagecode="1036" />
+                        </labels>
+                        <control id="training_numero" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="training_numero" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ad1df790-fe8a-4688-a348-a007a1d50b2b}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Formule" languagecode="1036" />
+                        </labels>
+                        <control id="training_formule" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="training_formule" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4bb30042-70dc-4239-b3b7-e1f0bdb1d453}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Date d'effet" languagecode="1036" />
+                        </labels>
+                        <control id="training_datedeffet" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="training_datedeffet" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{22071a21-2c33-4b53-a382-6d964d1ac5ed}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Contact" languagecode="1036" />
+                        </labels>
+                        <control id="training_contact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="training_contact" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2442a100-1d73-4014-89e2-b7b6722aa315}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{cd6cea04-1cc5-4137-932d-5ec2fb3683dd}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{fbabc155-8956-4eb0-aa49-5eb5994a2526}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{417e2adf-5d36-4c34-bee2-57cc52db25cb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{9ef1fa41-d659-4089-8cd3-2181e65a8fa7}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{adabec2a-92af-44ba-9358-2136aec26f9e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{964f1d7a-f6ba-4cc3-b4f5-e421a716b9bb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{e8a84ab1-8d20-4cde-aeb1-b10b940884c2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informations" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Formulaire pour cette entité." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

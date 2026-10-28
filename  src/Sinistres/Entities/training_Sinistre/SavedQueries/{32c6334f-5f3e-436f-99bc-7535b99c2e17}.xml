@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{32c6334f-5f3e-436f-99bc-7535b99c2e17}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="training_sinistrename" select="1" icon="1" preview="1">
+        <row name="result" id="training_sinistreid">
+          <cell name="training_sinistrename" width="300" />
+          <cell name="training_description" width="106" />
+          <cell name="training_contrat" width="100" />
+          <cell name="training_typedesinistre" width="129" />
+          <cell name="training_datededeclaration" width="149" />
+          <cell name="training_datedesurvenance" width="150" />
+          <cell name="training_delaidepuisladeclaration" width="146" />
+          <cell name="training_statutdusinistre" width="135" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="training_sinistre">
+          <attribute name="training_sinistreid" />
+          <attribute name="training_sinistrename" />
+          <order attribute="training_sinistrename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="training_contrat" />
+          <attribute name="training_datededeclaration" />
+          <attribute name="training_datedesurvenance" />
+          <attribute name="training_delaidepuisladeclaration" />
+          <attribute name="training_description" />
+          <attribute name="training_statutdusinistre" />
+          <attribute name="training_typedesinistre" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Sinistres actifs" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
