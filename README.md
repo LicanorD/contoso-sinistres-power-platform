@@ -208,6 +208,119 @@ Le choix d'un labo n'est pas qu'un sujet technique : il croise le type d'environ
 - [Microsoft Learn – FAQ des licences Power Platform](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq)
 - [Microsoft Learn – FAQ du paiement à l'usage](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-issues-faq)
 
+## Agent Copilot Studio – « Assistant gestionnaire »
+
+*Démarré le 29 octobre 2026.*
+
+### Le rôle de l'agent
+
+L'agent interne aide les gestionnaires de Contoso Assurances à instruire les sinistres, depuis Teams.
+
+| Récit | Ce que l'agent fait |
+| --- | --- |
+| 8 | Répond à une question de procédure (site SharePoint « Sinistres – Procédures ») ou donne l'état d'un dossier (Dataverse) |
+| 9 | Résume un dossier et y ajoute une note (flux d'agent) |
+
+Règles :
+
+- il ne cite que ce que le gestionnaire connecté a le droit de lire ;
+- face à une question hors périmètre, il le dit au lieu d'inventer.
+
+### Les choix de configuration
+
+| Sujet | Choix | Pourquoi |
+| --- | --- | --- |
+| Moteur (harness) | **Standard** (« Assistant ») | Seul moteur qui accepte les tables Dataverse comme connaissances et les rubriques (topics). Le moteur GitHub Copilot consomme des crédits même pendant les tests. |
+| Environnement | **Dev** (développeur géré), dans la solution **Sinistres** | L'agent doit être déployé par le pipeline comme le reste de la solution. |
+| Environnement d'équipe (Dataverse for Teams) | **Non** | Un environnement séparé, sans mes tables ni ma solution, inutilisable pour l'ALM. Teams sert seulement de canal de publication. |
+| Modèle | **Auto** | Réglage par défaut. Je compare avec un modèle fixe lors de l'évaluation, plutôt que de prendre le plus puissant par principe. |
+| Mémoire (préversion) | **Désactivée** | Des tests reproductibles. |
+| Authentification | **Authentifier avec Microsoft** | Exigée pour les connaissances Dataverse, et c'est elle qui fait respecter les droits de chaque gestionnaire. |
+
+### Instructions de l'agent
+
+> Tu es l'assistant des gestionnaires de sinistres de Contoso Assurances.
+> - Réponds en français, de façon brève et factuelle.
+> - Pour une question de procédure, appuie-toi uniquement sur les documents du site « Sinistres – Procédures » et cite le document utilisé.
+> - Pour une question sur un dossier, identifie-le par son numéro (format S-0001) et donne son statut, son type, ses montants et ses dates.
+> - Si l'information n'est pas dans tes sources, dis-le clairement et n'invente rien.
+> - Ne réponds pas aux questions sans rapport avec la gestion des sinistres.
+
+### Connaissances Dataverse
+
+**Prérequis :**
+
+- la recherche Dataverse est activée dans l'environnement ;
+- les tables Sinistre et Contrat sont indexées ;
+- le numéro, la description et le statut figurent parmi les colonnes de recherche de la vue « Recherche rapide » de Sinistre.
+
+La recherche Dataverse est un index plein texte, qui respecte les rôles de sécurité. C'est par elle que l'agent retrouve les bonnes lignes avant de rédiger sa réponse (principe du RAG).
+
+#### Synonymes – table Sinistre
+
+| Table ou colonne | Synonymes |
+| --- | --- |
+| Sinistre (table) | dossier, déclaration, sinistre déclaré, réclamation |
+| Numéro | numéro de dossier, référence, n° de sinistre |
+| Date de survenance | date du sinistre, date de l'incident, date de l'événement |
+| Date de déclaration | date de la déclaration, déclaré le |
+| Description | circonstances, détail, résumé des faits |
+| Montant estimé | estimation, coût estimé, chiffrage, évaluation |
+| Montant accordé | indemnisation, indemnité, montant versé, montant remboursé |
+| Statut | état, avancement, étape, où en est |
+| Délai depuis la déclaration | ancienneté, âge du dossier, nombre de jours |
+| Type de sinistre | nature, catégorie, type de dommage |
+| Contrat | police, contrat d'assurance |
+| Contact | assuré, client, souscripteur |
+
+#### Synonymes – table Contrat
+
+| Table ou colonne | Synonymes |
+| --- | --- |
+| Contrat (table) | police, contrat d'assurance, garantie |
+| Numéro | numéro de police, numéro de contrat, référence du contrat |
+| Formule | niveau de garantie, offre, couverture |
+| Date d'effet | date de début, date de souscription, prise d'effet |
+| Statut | état du contrat, actif, résilié |
+| Assuré | client, souscripteur, titulaire |
+
+#### Glossaire
+
+| Terme | Définition |
+| --- | --- |
+| S-0012 | Numéro d'un sinistre : « S- » suivi de 4 chiffres |
+| Dossier | Synonyme de sinistre dans le langage des gestionnaires |
+| Formule | Niveau de garantie d'un contrat : Essentiel, Confort ou Intégral |
+| Essentiel | Formule de base |
+| Confort | Formule intermédiaire |
+| Intégral | Formule la plus complète |
+| Déclaré | Sinistre reçu, pas encore pris en charge |
+| En instruction | Sinistre dont le statut est « Instruction » : le gestionnaire vérifie la déclaration |
+| En expertise | Sinistre dont le statut est « Expertise » : un expert évalue les dommages |
+| Décision | Étape où l'indemnisation est accordée ou refusée |
+| Clôturé | Sinistre terminé |
+| Gros sinistre | Sinistre dont le montant estimé dépasse 5 000 € : l'indemnisation doit être approuvée par le responsable |
+| Délai | Nombre de jours écoulés depuis la déclaration du sinistre |
+
+### Ce que j'ai rencontré
+
+- **Un essai déjà expiré.** La licence « Version d'évaluation de l'offre virale de Microsoft Copilot Studio » s'était attribuée automatiquement lors d'une première visite de Copilot Studio, sans courriel ni date visible. Elle avait expiré : les connaissances étaient bloquées jusqu'à la prolongation de 30 jours, faite le 29 octobre.
+- **Une offre trompeuse dans le centre d'administration.** La « licence utilisateur Copilot Studio » à 0 € donne l'accès à Copilot Studio, mais pas les crédits qui font tourner les agents. Je ne l'ai pas prise.
+- **Un mauvais moteur au premier essai.** Mon premier agent, créé depuis la solution, est parti sur le moteur GitHub Copilot : pas de connaissances Dataverse, et des crédits consommés dès les tests. Je l'ai supprimé et recréé sur le moteur standard. Le moteur se choisit à la création et ne se change pas après.
+- **Coûts.** Les tests dans le panneau de test ne consomment pas de crédits sur le moteur standard. Les évaluations, les flux d'agent et les prompts en consomment. Sans pack de crédits ni paiement à l'usage, rien ne peut être facturé.
+
+### Ce que j'en retiens
+
+Avant de construire un agent, trois choix décident de tout : le moteur, l'environnement et la licence. Ils déterminent ce que l'agent peut faire, où il peut être déployé et combien il coûte. Un client qui démarre Copilot Studio se heurte aux mêmes pièges.
+
+### Sources
+
+- [Microsoft Learn – Ajouter des tables Dataverse comme connaissances](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-dataverse)
+- [Microsoft Learn – Les moteurs (harnesses) de Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview)
+- [Microsoft Learn – Changer d'expérience](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/switch-experiences)
+- [Microsoft Learn – FAQ facturation et licences Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/faq-billing-licensing)
+- [Microsoft Learn – S'inscrire à un essai Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/sign-up-individual)
+
 
 ## Limites rencontrées
 
