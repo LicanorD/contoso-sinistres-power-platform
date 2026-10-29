@@ -191,7 +191,7 @@ Microsoft augmente le prix de Power Apps Premium le 1er janvier 2027 (19,10 € 
 
 ### Ce que ça implique pour la suite
 
-- **Copilot Studio** : l'agent est construit dans Dev pendant l'essai. Après l'essai (vers le 8 février 2027), il tournera dans le sandbox Test, déployé par le pipeline, avec le paiement à l'usage.
+- **Copilot Studio** : l'agent est construit dans Dev pendant l'essai. Après l'essai (vers le 27 janvier 2027), il tournera dans le sandbox Test, déployé par le pipeline, avec le paiement à l'usage.
 - **Power Pages** : le site est créé dans Dev. Un site dans un environnement développeur ne peut pas passer en production, ce qui est sans conséquence pour une démonstration.
 - **Capacité** : les tables système de Dataverse occupent de la place dans chaque environnement. En entreprise, on les purge régulièrement avec des travaux de suppression en bloc.
 
