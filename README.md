@@ -308,6 +308,7 @@ La recherche Dataverse est un index plein texte, qui respecte les rôles de séc
 - **Une offre trompeuse dans le centre d'administration.** La « licence utilisateur Copilot Studio » à 0 € donne l'accès à Copilot Studio, mais pas les crédits qui font tourner les agents. Je ne l'ai pas prise.
 - **Un mauvais moteur au premier essai.** Mon premier agent, créé depuis la solution, est parti sur le moteur GitHub Copilot : pas de connaissances Dataverse, et des crédits consommés dès les tests. Je l'ai supprimé et recréé sur le moteur standard. Le moteur se choisit à la création et ne se change pas après.
 - **Coûts.** Les tests dans le panneau de test ne consomment pas de crédits sur le moteur standard. Les évaluations, les flux d'agent et les prompts en consomment. Sans pack de crédits ni paiement à l'usage, rien ne peut être facturé.
+- Les flux d’agent s’exécutent avec les identifiants de l’auteur. Acceptable pour une démo à un seul utilisateur ; en production, je passerais aux identifiants de l’utilisateur final ou à un compte de service à privilèges minimaux.
 
 ### Ce que j'en retiens
 
