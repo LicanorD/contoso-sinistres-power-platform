@@ -1,0 +1,14 @@
+<msdyn_dmsrequeststatus msdyn_dmsrequeststatusid="32bdff93-0e08-4329-840f-9107cb617417">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_errordetails>{"Version":"1.0","RequestErrorMessage":null,"RequestErrorCulprit":"User","EntityErrorDetails":[{"EntityName":"table","EntityErrorCulprit":"User","TaskErrors":[{"ErrorCode":-2147203051,"ErrorCodeHex":"0x80044815","ErrorName":"InvalidAttributeDataType","ErrorMessage":"There is a data type mismatch between the dataflow's source query column value and the destination entity field type. The source query column that is mapped to the Common Data Service training_contrat entity's training_numero field contained C-2024-101 but the Table's field requires IntegerType data type.","StatusCode":400,"OperationName":"RecordTransformation","ServiceRequestId":"00000000-0000-0000-0000-000000000000","ApiRequestId":"00000000-0000-0000-0000-000000000000","HelpLink":null,"InnerErrorMessage":null,"Culprit":"User","Identifier":"training_contratid eq null","IsSelfReferenceUpdateError":false,"ErrorLevel":"Task","ExceptionDetail":null,"RequestTimeUtc":"2026-10-26T12:30:03.7558106+00:00","RequestPayload":"{\"training_formule\": \"960740000\",\"training_datedeffet\": \"12/31/2022 23:00:00\",\"training_numero\": \"C-2024-101\",\"training_statut\": \"Actif\"}"}]}],"RetryAfter":null}</msdyn_errordetails>
+  <msdyn_lookupfield_uploadrequest>
+    <msdyn_dmsrequestid>9793cbaf-6097-40ef-a052-d9f095cddd16</msdyn_dmsrequestid>
+  </msdyn_lookupfield_uploadrequest>
+  <msdyn_uploadendtime>10/26/2026 11:30:03 AM</msdyn_uploadendtime>
+  <msdyn_uploadstarttime>10/26/2026 11:30:03 AM</msdyn_uploadstarttime>
+  <msdyn_uploadstatus>PermanentFailed</msdyn_uploadstatus>
+  <msdyn_uploadstatusdetails>{"Version":"1.0","EntityStatusDetails":[{"EntityName":"table","EntityId":"ac52c9e9-133c-4451-b584-6d2aaad486c4","Status":"Failed","StartTime":"2026-10-26T12:30:03.2775693+00:00","EndTime":"2026-10-26T12:30:03.7567065+00:00","CreatedRecords":0,"UpdatedRecords":0,"DeletedRecords":0,"ErrorRecords":1}]}</msdyn_uploadstatusdetails>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <timezoneruleversionnumber>0</timezoneruleversionnumber>
+</msdyn_dmsrequeststatus>

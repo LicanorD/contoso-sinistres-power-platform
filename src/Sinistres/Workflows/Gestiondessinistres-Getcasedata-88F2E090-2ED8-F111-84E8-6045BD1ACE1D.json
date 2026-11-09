@@ -1,0 +1,195 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "training_SinistresDataverse"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "metadata": {
+        "defaultToEmbeddedConnections": true
+      },
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "numDossier",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Tapez votre entrée",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "84d53625-5e8d-4e87-82db-7f7083fb84ea"
+          }
+        }
+      },
+      "actions": {
+        "Lister_les_lignes_-_Sinistres": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "training_sinistres",
+              "$filter": "training_sinistrename eq '@{triggerBody()['text']}'"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          },
+          "runAfter": {
+            "Initialiser_la_variable_Echanges": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "aedccf06-d278-4f2f-bb53-c3829d251ec3"
+          }
+        },
+        "Respond_to_Copilot": {
+          "type": "Response",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "response": {
+                  "title": "response",
+                  "x-ms-dynamically-added": true,
+                  "type": "string",
+                  "description": ""
+                },
+                "lastnotes": {
+                  "title": "lastNotes",
+                  "description": "",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "additionalProperties": {}
+            },
+            "statusCode": 200,
+            "body": {
+              "response": "@{   concat(\r\n   'Dossier : ', outputs('Sinistre')?['training_sinistrename'], decodeUriComponent('%0A'),\r\n   'Statut : ', outputs('Sinistre')?['training_statutdusinistre@OData.Community.Display.V1.FormattedValue'], decodeUriComponent('%0A'),\r\n   'Type : ', outputs('Sinistre')?['_training_typedesinistre_value@OData.Community.Display.V1.FormattedValue'], decodeUriComponent('%0A'),\r\n   'Description : ', outputs('Sinistre')?['training_description'], decodeUriComponent('%0A'),\r\n   'Assuré : ', outputs('Sinistre')?['_training_assure_value@OData.Community.Display.V1.FormattedValue'], decodeUriComponent('%0A'),\r\n   'Contrat : ', outputs('Sinistre')?['_training_contrat_value@OData.Community.Display.V1.FormattedValue'], decodeUriComponent('%0A'),\r\n   'Montant estimé : ', outputs('Sinistre')?['training_montantestime@OData.Community.Display.V1.FormattedValue'], ' €', decodeUriComponent('%0A'),\r\n   'Montant accordé : ', coalesce(outputs('Sinistre')?['training_montantaccorde@OData.Community.Display.V1.FormattedValue'], 'non renseigné'), decodeUriComponent('%0A'),\r\n  'Date de survenance : ', if(empty(outputs('Sinistre')?['training_datedesurvenance@OData.Community.Display.V1.FormattedValue']), 'non renseignée', first(split(outputs('Sinistre')?['training_datedesurvenance@OData.Community.Display.V1.FormattedValue'], ' '))), decodeUriComponent('%0A'),'Date de déclaration : ', if(empty(outputs('Sinistre')?['training_datededeclaration@OData.Community.Display.V1.FormattedValue']), 'non renseignée', first(split(outputs('Sinistre')?['training_datededeclaration@OData.Community.Display.V1.FormattedValue'], ' '))), decodeUriComponent('%0A'),'Délai depuis la déclaration : ', coalesce(string(outputs('Sinistre')?['training_delaidepuisladeclaration']), 'non calculé'), ' jours')}",
+              "lastnotes": "@{if(empty(variables('Echanges')), 'Aucune note', variables('Echanges'))}"
+            }
+          },
+          "runAfter": {
+            "For_each_Sinistre": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "64e5244f-66e5-4bdd-8852-35ea057e3998"
+          }
+        },
+        "For_each_Sinistre": {
+          "type": "Foreach",
+          "foreach": "@outputs('Lister_les_lignes_-_Sinistres')?['body/value']",
+          "actions": {
+            "Lister_les_lignes_-_Echanges": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "entityName": "training_echanges",
+                  "$filter": "_training_sinistre_value eq @{items('For_each_Sinistre')?['training_sinistreid']}",
+                  "$orderby": "createdon desc",
+                  "$top": 5
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "ListRecords",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
+              }
+            },
+            "Sélectionner": {
+              "type": "Select",
+              "inputs": {
+                "from": "@outputs('Lister_les_lignes_-_Echanges')?['body/value']",
+                "select": "@concat(item()?['training_date@OData.Community.Display.V1.FormattedValue'], ' – ', item()?['training_auteur@OData.Community.Display.V1.FormattedValue'], ' : ', item()?['training_message'])"
+              },
+              "runAfter": {
+                "Lister_les_lignes_-_Echanges": [
+                  "Succeeded"
+                ]
+              }
+            },
+            "Définir_Echanges": {
+              "type": "SetVariable",
+              "inputs": {
+                "name": "Echanges",
+                "value": "@join(body('Sélectionner'), decodeUriComponent('%0A'))"
+              },
+              "runAfter": {
+                "Sélectionner": [
+                  "Succeeded"
+                ]
+              }
+            }
+          },
+          "runAfter": {
+            "Sinistre": [
+              "Succeeded"
+            ]
+          }
+        },
+        "Initialiser_la_variable_Echanges": {
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Echanges",
+                "type": "string"
+              }
+            ]
+          },
+          "runAfter": {}
+        },
+        "Sinistre": {
+          "type": "Compose",
+          "inputs": "@first(outputs('Lister_les_lignes_-_Sinistres')?['body/value'])",
+          "runAfter": {
+            "Lister_les_lignes_-_Sinistres": [
+              "Succeeded"
+            ]
+          }
+        }
+      },
+      "description": "Ce flux démarre lorsqu’un utilisateur saisit un numéro de dossier. Il recherche ensuite les enregistrements correspondants dans une base de données liée à ce numéro. Une fois la recherche terminée, il renvoie les résultats à l’utilisateur sous forme de réponse structurée. Ce processus permet d’obtenir rapidement les informations associées à un dossier spécifique, facilitant ainsi l’accès et la gestion des données."
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

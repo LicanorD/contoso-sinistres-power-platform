@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="289a64e4-dc1e-4c10-b41b-2a6704cea707">
+  <description default="Formule la plus complète">
+    <label description="Formule la plus complète" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="Intégral">
+    <label description="Intégral" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

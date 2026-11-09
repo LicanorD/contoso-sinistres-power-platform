@@ -1,0 +1,132 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "training_SinistresDataverse"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_approvals": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "training_sharedapprovals_eb09b"
+        },
+        "api": {
+          "name": "shared_approvals"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "Sinistres - Adresse d'envoi des notifications (training_SinistresAdressedenvoidesnotifications)": {
+          "defaultValue": "igor.doussot@gmail.com",
+          "type": "String",
+          "metadata": {
+            "schemaName": "training_SinistresAdressedenvoidesnotifications"
+          }
+        },
+        "Sinistres - Seuil montant estimé (training_Seuil)": {
+          "defaultValue": 5000,
+          "type": "Int",
+          "metadata": {
+            "schemaName": "training_Seuil"
+          }
+        },
+        "Sinistres - Lien sinistre (training_SinistresLiensinistre)": {
+          "defaultValue": "https://org061429be.crm12.dynamics.com/main.aspx?appid=62077b05-c3c7-f111-a05a-00224838d660&pagetype=entityrecord&etn=training_sinistre&id=",
+          "type": "String",
+          "metadata": {
+            "schemaName": "training_SinistresLiensinistre"
+          }
+        }
+      },
+      "triggers": {
+        "Lorsqu’une_ligne_est_ajoutée,_modifiée_ou_supprimée": {
+          "metadata": {
+            "operationMetadataId": "8b393998-7d95-4d5d-9768-5149dd59d534"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "training_sinistre",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "training_statutdusinistre"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Démarrer_et_attendre_une_approbation": {
+              "type": "OpenApiConnectionWebhook",
+              "inputs": {
+                "parameters": {
+                  "approvalType": "Basic",
+                  "WebhookApprovalCreationInput/title": "Sinistre @{triggerOutputs()?['body/training_numero']} : décisions à valider (@{triggerOutputs()?['body/training_montantestime']} €)",
+                  "WebhookApprovalCreationInput/assignedTo": "@parameters('Sinistres - Adresse d''envoi des notifications (training_SinistresAdressedenvoidesnotifications)')",
+                  "WebhookApprovalCreationInput/details": "@{triggerOutputs()?['body/_training_typedesinistre_value']}| @{triggerOutputs()?['body/training_montantestime']} € | @{triggerOutputs()?['body/training_description']}",
+                  "WebhookApprovalCreationInput/itemLink": "@{parameters('Sinistres - Lien sinistre (training_SinistresLiensinistre)')}@{triggerOutputs()?['body/training_sinistreid']}",
+                  "WebhookApprovalCreationInput/itemLinkDescription": "Lien vers le sinistre",
+                  "WebhookApprovalCreationInput/enableNotifications": true,
+                  "WebhookApprovalCreationInput/enableReassignment": true
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_approvals",
+                  "operationId": "StartAndWaitForAnApproval",
+                  "connectionName": "shared_approvals"
+                }
+              }
+            }
+          },
+          "runAfter": {},
+          "else": {
+            "actions": {}
+          },
+          "expression": {
+            "and": [
+              {
+                "equals": [
+                  "@triggerOutputs()?['body/training_statutdusinistre']",
+                  "Décision"
+                ]
+              },
+              {
+                "greater": [
+                  "@triggerOutputs()?['body/training_montantestime']",
+                  "@parameters('Sinistres - Seuil montant estimé (training_Seuil)')"
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "8f6a131c-42e9-43c2-b4af-dc282cfcae2a"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

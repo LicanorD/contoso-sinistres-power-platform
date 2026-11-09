@@ -1,0 +1,7 @@
+kind: EvaluationData
+rows:
+  - source: Manual
+    input: What types of claims are covered under Contoso Assurances?
+
+extensionData:
+  displayOrder: "1793785992373"

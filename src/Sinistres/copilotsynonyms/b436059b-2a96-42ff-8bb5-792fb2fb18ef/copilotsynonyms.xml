@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="b436059b-2a96-42ff-8bb5-792fb2fb18ef">
+  <columnlogicalname>training_montantaccorde</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="indemnisation, indemnité, montant versé, montant remboursé">
+    <label description="indemnisation, indemnité, montant versé, montant remboursé" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

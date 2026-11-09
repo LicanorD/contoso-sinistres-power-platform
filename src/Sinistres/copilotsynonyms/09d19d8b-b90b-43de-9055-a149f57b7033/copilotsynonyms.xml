@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="09d19d8b-b90b-43de-9055-a149f57b7033">
+  <columnlogicalname>training_datedeffet</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>6e2076f5-2299-4acf-8b79-d0384135cbc3</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="date de début, date de souscription, prise d'effet">
+    <label description="date de début, date de souscription, prise d'effet" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

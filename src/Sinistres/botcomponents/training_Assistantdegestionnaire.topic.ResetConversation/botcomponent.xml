@@ -1,0 +1,10 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.ResetConversation">
+  <componenttype>9</componenttype>
+  <iscustomizable>0</iscustomizable>
+  <name>Réinitialiser la conversation</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

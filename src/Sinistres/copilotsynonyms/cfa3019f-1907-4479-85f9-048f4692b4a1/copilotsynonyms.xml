@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="cfa3019f-1907-4479-85f9-048f4692b4a1">
+  <columnlogicalname>training_datedesurvenance</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="date du sinistre, date de l'incident, date de l'événement">
+    <label description="date du sinistre, date de l'incident, date de l'événement" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

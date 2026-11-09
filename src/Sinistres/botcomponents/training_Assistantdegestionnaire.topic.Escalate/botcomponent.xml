@@ -1,0 +1,13 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.Escalate">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique système est déclenchée quand l’utilisateur indique qu’il souhaite parler à un représentant.
+Vous pouvez configurer la manière dont l’assistant gère les scénarios de transfert à un agent humain dans les paramètres de l’assistant.
+Si votre assistant ne gère pas les réaffectations, cette rubrique doit être désactivée.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Réaffecter</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="f7e35484-2329-40a4-b987-213e9b84685e">
+  <columnlogicalname>training_statutdusinistre</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="état, avancement, étape, où en est">
+    <label description="état, avancement, étape, où en est" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

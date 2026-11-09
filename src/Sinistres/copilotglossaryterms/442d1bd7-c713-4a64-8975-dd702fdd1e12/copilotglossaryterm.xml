@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="442d1bd7-c713-4a64-8975-dd702fdd1e12">
+  <description default="Sinistre dont le montant estimé dépasse 5 000 € : l'indemnisation doit être approuvée par le responsable">
+    <label description="Sinistre dont le montant estimé dépasse 5 000 € : l'indemnisation doit être approuvée par le responsable" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="Gros sinistre">
+    <label description="Gros sinistre" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

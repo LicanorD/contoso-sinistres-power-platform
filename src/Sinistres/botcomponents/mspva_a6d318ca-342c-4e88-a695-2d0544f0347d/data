@@ -1,0 +1,7 @@
+kind: EvaluationData
+rows:
+  - source: Manual
+    input: What is the current status of claim S-0234?
+
+extensionData:
+  displayOrder: "1793785992376"

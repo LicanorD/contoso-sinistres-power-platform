@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.MultipleTopicsMatched">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique système se déclenche lorsque l’assistant associe plusieurs rubriques au message entrant et qu’il a besoin de précisions afin de savoir laquelle doit être utilisée.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Plusieurs rubriques correspondent</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

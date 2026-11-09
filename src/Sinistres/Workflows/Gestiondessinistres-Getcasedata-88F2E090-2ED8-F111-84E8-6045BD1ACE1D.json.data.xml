@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{88f2e090-2ed8-f111-84e8-6045bd1ace1d}" Name="Gestion des sinistres - Get case data" Description="Ce flux démarre lorsqu’un utilisateur saisit un numéro de dossier. Il recherche ensuite les enregistrements correspondants dans une base de données liée à ce numéro. Une fois la recherche terminée, il renvoie les résultats à l’utilisateur sous forme de réponse structurée. Ce processus permet d’obtenir rapidement les informations associées à un dossier spécifique, facilitant ainsi l’accès et la gestion des données." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <JsonFileName>/Workflows/Gestiondessinistres-Getcasedata-88F2E090-2ED8-F111-84E8-6045BD1ACE1D.json</JsonFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>5</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ModernFlowType>0</ModernFlowType>
+  <PrimaryEntity>none</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1036" description="Gestion des sinistres - Get case data" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1036" description="Ce flux démarre lorsqu’un utilisateur saisit un numéro de dossier. Il recherche ensuite les enregistrements correspondants dans une base de données liée à ce numéro. Une fois la recherche terminée, il renvoie les résultats à l’utilisateur sous forme de réponse structurée. Ce processus permet d’obtenir rapidement les informations associées à un dossier spécifique, facilitant ainsi l’accès et la gestion des données." />
+  </Descriptions>
+</Workflow>

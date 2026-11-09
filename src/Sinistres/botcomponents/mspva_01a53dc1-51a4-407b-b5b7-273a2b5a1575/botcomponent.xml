@@ -1,0 +1,15 @@
+<botcomponent schemaname="mspva_01a53dc1-51a4-407b-b5b7-273a2b5a1575">
+  <category>Testing</category>
+  <componenttype>19</componenttype>
+  <description>Can you summarize the details for claim S-0057 and add a note about the recent customer call?</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Can you summarize the details for claim S-0057 and add a note about the recent customer call?</name>
+  <parentbotcomponentid>
+    <schemaname>mspva_23ea7da4-5368-4af7-b0be-24c69c8f2cc0</schemaname>
+  </parentbotcomponentid>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

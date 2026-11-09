@@ -1,0 +1,14 @@
+<msdyn_dmsrequeststatus msdyn_dmsrequeststatusid="b25517d8-3b99-4b4e-b532-d8112a4bccc0">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_errordetails>{"Version":"1.0","RequestErrorMessage":null,"RequestErrorCulprit":"User","EntityErrorDetails":[{"EntityName":"table","EntityErrorCulprit":"User","TaskErrors":[{"ErrorCode":-2147086331,"ErrorCodeHex":"0x80061005","ErrorName":"OptionSetValidationFailed","ErrorMessage":"Table training_contrat field training_formule is a training_contrat_training_formule Choice data type. The value Essentiel is not a valid value for the training_formule choice field.","StatusCode":400,"OperationName":"RecordTransformation","ServiceRequestId":"00000000-0000-0000-0000-000000000000","ApiRequestId":"00000000-0000-0000-0000-000000000000","HelpLink":null,"InnerErrorMessage":null,"Culprit":"User","Identifier":"training_contratid eq null","IsSelfReferenceUpdateError":false,"ErrorLevel":"Task","ExceptionDetail":null,"RequestTimeUtc":"2026-10-26T12:17:43.695261+00:00","RequestPayload":"{\"training_formule\": \"Essentiel\",\"training_contratname\": \"C-2024-101\",\"training_datedeffet\": \"12/31/2022 23:00:00\",\"training_statut\": \"Actif\"}"}]}],"RetryAfter":null}</msdyn_errordetails>
+  <msdyn_lookupfield_uploadrequest>
+    <msdyn_dmsrequestid>a48733d5-627b-42c0-a6cd-5ec368aea5f7</msdyn_dmsrequestid>
+  </msdyn_lookupfield_uploadrequest>
+  <msdyn_uploadendtime>10/26/2026 11:17:44 AM</msdyn_uploadendtime>
+  <msdyn_uploadstarttime>10/26/2026 11:17:43 AM</msdyn_uploadstarttime>
+  <msdyn_uploadstatus>Succeeded</msdyn_uploadstatus>
+  <msdyn_uploadstatusdetails>{"Version":"1.0","EntityStatusDetails":[{"EntityName":"table","EntityId":"333bd27d-9281-42d1-9fcd-b68f049e356f","Status":"Succeeded","StartTime":"2026-10-26T12:17:43.2296963+00:00","EndTime":"2026-10-26T12:17:44.5093555+00:00","CreatedRecords":4,"UpdatedRecords":0,"DeletedRecords":0,"ErrorRecords":1}]}</msdyn_uploadstatusdetails>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <timezoneruleversionnumber>0</timezoneruleversionnumber>
+</msdyn_dmsrequeststatus>

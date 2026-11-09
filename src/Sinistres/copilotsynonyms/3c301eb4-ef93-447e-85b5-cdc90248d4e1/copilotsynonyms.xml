@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="3c301eb4-ef93-447e-85b5-cdc90248d4e1">
+  <columnlogicalname>training_contrat</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="police, contrat d'assurance">
+    <label description="police, contrat d'assurance" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

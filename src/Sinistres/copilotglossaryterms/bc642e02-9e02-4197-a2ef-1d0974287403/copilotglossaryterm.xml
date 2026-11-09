@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="bc642e02-9e02-4197-a2ef-1d0974287403">
+  <description default="Synonyme de sinistre dans le langage des gestionnaires">
+    <label description="Synonyme de sinistre dans le langage des gestionnaires" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="Dossier">
+    <label description="Dossier" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

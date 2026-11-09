@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="d84d9711-23b7-4069-aaf8-03cd48d9f324">
+  <columnlogicalname>training_delaidepuisladeclaration</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="ancienneté, âge du dossier, nombre de jours">
+    <label description="ancienneté, âge du dossier, nombre de jours" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

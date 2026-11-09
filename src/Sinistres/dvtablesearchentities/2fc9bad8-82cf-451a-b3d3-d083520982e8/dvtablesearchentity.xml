@@ -1,0 +1,10 @@
+<dvtablesearchentity dvtablesearchentityid="2fc9bad8-82cf-451a-b3d3-d083520982e8">
+  <dvtablesearch>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </dvtablesearch>
+  <entitylogicalname>training_sinistre</entitylogicalname>
+  <iscustomizable>0</iscustomizable>
+  <name>training_Sinistre</name>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</dvtablesearchentity>

@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.ConversationStart">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique système se déclenche quand l’assistant reçoit une activité indiquant le début d’une nouvelle conversation. Si vous ne souhaitez pas que l’assistant lance la conversation, désactivez cette rubrique.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Début de la conversation</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,19 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnUnknownIntent
+  id: main
+  actions:
+    - kind: ConditionGroup
+      id: conditionGroup_LktzXw
+      conditions:
+        - id: conditionItem_tlGIVo
+          condition: =System.FallbackCount < 3
+          actions:
+            - kind: SendActivity
+              id: sendMessage_QZreqo
+              activity: "Je suis l’assistant des gestionnaires de sinistres : je peux vous aider sur les dossiers (par exemple « Où en est le dossier S-XXXX ? »), les contrats et les procédures internes."
+
+      elseActions:
+        - kind: BeginDialog
+          id: 5aXj5M
+          dialog: training_Assistantdegestionnaire.topic.Escalate

@@ -1,0 +1,7 @@
+kind: EvaluationData
+rows:
+  - source: Manual
+    input: How can I transfer a claim to another manager?
+
+extensionData:
+  displayOrder: "1793785992370"

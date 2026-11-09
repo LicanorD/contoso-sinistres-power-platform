@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="24161b05-d045-470c-b8e4-94295399ef87">
+  <columnlogicalname>training_montantestime</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="estimation, coût estimé, chiffrage, évaluation">
+    <label description="estimation, coût estimé, chiffrage, évaluation" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

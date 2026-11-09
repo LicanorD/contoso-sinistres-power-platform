@@ -1,0 +1,7 @@
+kind: EvaluationData
+rows:
+  - source: Manual
+    input: Can you summarize the details for claim S-0057 and add a note about the recent customer call?
+
+extensionData:
+  displayOrder: "1793785992375"

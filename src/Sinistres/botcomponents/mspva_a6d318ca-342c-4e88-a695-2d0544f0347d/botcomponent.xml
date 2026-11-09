@@ -1,0 +1,15 @@
+<botcomponent schemaname="mspva_a6d318ca-342c-4e88-a695-2d0544f0347d">
+  <category>Testing</category>
+  <componenttype>19</componenttype>
+  <description>What is the current status of claim S-0234?</description>
+  <iscustomizable>0</iscustomizable>
+  <name>What is the current status of claim S-0234?</name>
+  <parentbotcomponentid>
+    <schemaname>mspva_23ea7da4-5368-4af7-b0be-24c69c8f2cc0</schemaname>
+  </parentbotcomponentid>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

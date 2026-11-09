@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="b845f791-cffb-4e5c-97da-946958e07564">
+  <description default="Sinistre terminé">
+    <label description="Sinistre terminé" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="Clôturé">
+    <label description="Clôturé" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

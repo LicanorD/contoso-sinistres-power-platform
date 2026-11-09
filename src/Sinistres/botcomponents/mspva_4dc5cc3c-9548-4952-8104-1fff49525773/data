@@ -1,0 +1,7 @@
+kind: EvaluationData
+rows:
+  - source: Manual
+    input: Is claim S-0112 still active or has it been closed?
+
+extensionData:
+  displayOrder: "1793785992371"

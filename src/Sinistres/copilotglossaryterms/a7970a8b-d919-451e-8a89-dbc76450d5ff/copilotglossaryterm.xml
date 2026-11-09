@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="a7970a8b-d919-451e-8a89-dbc76450d5ff">
+  <description default="Sinistre dont le statut est « Instruction » : le gestionnaire vérifie la déclaration">
+    <label description="Sinistre dont le statut est « Instruction » : le gestionnaire vérifie la déclaration" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="En instruction">
+    <label description="En instruction" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

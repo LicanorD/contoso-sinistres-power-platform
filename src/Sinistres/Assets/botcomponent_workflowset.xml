@@ -1,0 +1,8 @@
+<botcomponent_workflowset>
+  <botcomponent_workflow botcomponentid.schemaname="training_Assistantdegestionnaire.topic.Consulteundossier" workflowid.workflowid="88f2e090-2ed8-f111-84e8-6045bd1ace1d">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_workflow>
+  <botcomponent_workflow botcomponentid.schemaname="training_Assistantdegestionnaire.topic.Rsumeundossierdesinistreetajoutes-yunenote" workflowid.workflowid="c62f0eea-c2d6-f111-84e8-00224838d660">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_workflow>
+</botcomponent_workflowset>

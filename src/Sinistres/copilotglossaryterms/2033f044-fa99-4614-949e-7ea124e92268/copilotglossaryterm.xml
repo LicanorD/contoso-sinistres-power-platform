@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="2033f044-fa99-4614-949e-7ea124e92268">
+  <description default="Numéro d'un sinistre : « S- » suivi de 4 chiffres">
+    <label description="Numéro d'un sinistre : « S- » suivi de 4 chiffres" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="S-0012">
+    <label description="S-0012" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

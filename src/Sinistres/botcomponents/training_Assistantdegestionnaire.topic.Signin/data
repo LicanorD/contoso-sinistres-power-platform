@@ -1,0 +1,19 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnSignIn
+  id: main
+  actions:
+    - kind: ConditionGroup
+      id: conditionGroup_ypjGKL
+      conditions:
+        - id: conditionItem_7XYIIR
+          condition: =System.SignInReason = SignInReason.SignInRequired
+          actions:
+            - kind: SendActivity
+              id: sendMessage_1jHUNO
+              activity: Bonjour, pour pouvoir vous aider, j’ai besoin que vous vous connectiez.
+
+    - kind: OAuthInput
+      id: gOjhZA
+      title: Connexion
+      text: Pour continuer, connectez-vous

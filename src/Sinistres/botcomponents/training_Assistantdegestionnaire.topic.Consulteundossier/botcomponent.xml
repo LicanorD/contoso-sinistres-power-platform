@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.Consulteundossier">
+  <componenttype>9</componenttype>
+  <description>À utiliser dès que l’utilisateur cite un numéro de dossier (S-xxxx)</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Consulte un dossier</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

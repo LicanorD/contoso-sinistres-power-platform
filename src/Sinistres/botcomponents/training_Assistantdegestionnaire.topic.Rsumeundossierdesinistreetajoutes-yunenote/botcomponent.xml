@@ -1,0 +1,10 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.Rsumeundossierdesinistreetajoutes-yunenote">
+  <componenttype>9</componenttype>
+  <iscustomizable>0</iscustomizable>
+  <name>Résume un dossier de sinistre et ajoutes-y une note</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

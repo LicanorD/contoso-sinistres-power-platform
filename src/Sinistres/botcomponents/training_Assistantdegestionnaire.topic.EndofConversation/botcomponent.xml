@@ -1,0 +1,12 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.EndofConversation">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique système n’est déclenchée que par une action de redirection,
+et guide l’utilisateur dans le processus d’évaluation de sa conversation avec l’assistant.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Fin de la conversation</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="ce5ae574-7ae7-4348-8da3-b90498bfd63e">
+  <columnlogicalname>training_sinistrename</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="dossier, déclaration, sinistre déclaré, réclamation">
+    <label description="dossier, déclaration, sinistre déclaré, réclamation" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

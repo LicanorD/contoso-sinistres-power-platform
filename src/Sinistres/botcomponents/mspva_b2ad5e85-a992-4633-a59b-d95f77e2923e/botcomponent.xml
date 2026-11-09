@@ -1,0 +1,15 @@
+<botcomponent schemaname="mspva_b2ad5e85-a992-4633-a59b-d95f77e2923e">
+  <category>Testing</category>
+  <componenttype>19</componenttype>
+  <description>How do I start a new claim process for a car accident?</description>
+  <iscustomizable>0</iscustomizable>
+  <name>How do I start a new claim process for a car accident?</name>
+  <parentbotcomponentid>
+    <schemaname>mspva_23ea7da4-5368-4af7-b0be-24c69c8f2cc0</schemaname>
+  </parentbotcomponentid>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

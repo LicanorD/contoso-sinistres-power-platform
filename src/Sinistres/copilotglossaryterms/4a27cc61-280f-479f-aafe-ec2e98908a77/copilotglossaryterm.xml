@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="4a27cc61-280f-479f-aafe-ec2e98908a77">
+  <description default="Sinistre reçu, pas encore pris en charge">
+    <label description="Sinistre reçu, pas encore pris en charge" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="Déclaré">
+    <label description="Déclaré" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

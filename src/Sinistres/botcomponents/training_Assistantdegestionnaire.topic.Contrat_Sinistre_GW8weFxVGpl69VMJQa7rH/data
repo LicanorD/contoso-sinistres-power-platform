@@ -1,0 +1,5 @@
+kind: KnowledgeSourceConfiguration
+source:
+  kind: DataverseStructuredSearchSource
+  triggerCondition: true
+  skillConfiguration: Contrat_Sinistre_dR4wSyjZdw_XLACOOl0ms

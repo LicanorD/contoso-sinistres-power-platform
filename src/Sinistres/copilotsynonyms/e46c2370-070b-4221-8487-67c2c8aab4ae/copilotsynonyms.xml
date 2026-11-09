@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="e46c2370-070b-4221-8487-67c2c8aab4ae">
+  <columnlogicalname>training_datededeclaration</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="date de la déclaration, déclaré le">
+    <label description="date de la déclaration, déclaré le" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

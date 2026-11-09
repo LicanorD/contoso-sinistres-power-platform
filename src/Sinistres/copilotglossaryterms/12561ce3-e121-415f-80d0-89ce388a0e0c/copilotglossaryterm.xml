@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="12561ce3-e121-415f-80d0-89ce388a0e0c">
+  <description default="Sinistre dont le statut est « Expertise » : un expert évalue les dommages">
+    <label description="Sinistre dont le statut est « Expertise » : un expert évalue les dommages" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="En expertise">
+    <label description="En expertise" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

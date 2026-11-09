@@ -1,0 +1,7 @@
+kind: EvaluationData
+rows:
+  - source: Manual
+    input: Where can I find the procedure for handling water damage claims?
+
+extensionData:
+  displayOrder: "1793785992369"

@@ -1,0 +1,7 @@
+kind: EvaluationData
+rows:
+  - source: Manual
+    input: Has the payment been issued for claim S-0076?
+
+extensionData:
+  displayOrder: "1793785992368"

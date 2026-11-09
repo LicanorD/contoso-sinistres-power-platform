@@ -1,0 +1,7 @@
+kind: EvaluationData
+rows:
+  - source: Manual
+    input: Can you tell me the amount and dates for claim S-0198?
+
+extensionData:
+  displayOrder: "1793785992372"

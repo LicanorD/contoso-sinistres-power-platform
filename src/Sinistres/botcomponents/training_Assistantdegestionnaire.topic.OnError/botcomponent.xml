@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.OnError">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique système se déclenche lorsque l’assistant rencontre une erreur. Lorsque vous utilisez le volet de conversation instantanée de test, la description complète de l’erreur est affichée.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>En cas d’erreur</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

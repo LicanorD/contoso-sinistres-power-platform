@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{ddfb8d33-c6c7-f111-a05a-00224838d660}" Name="Montant estimé si instruction égal instruction" Description="Cliquer pour ajouter une description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/Montantestimsiinstructiongalinstruction-DDFB8D33-C6C7-F111-A05A-00224838D660.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>2</ProcessTriggerScope>
+  <ModernFlowType>0</ModernFlowType>
+  <PrimaryEntity>training_Sinistre</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1036" description="Montant estimé si instruction égal instruction" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1036" description="Cliquer pour ajouter une description" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{9db0096c-91fa-470a-9c69-5b768ef2147d}" />
+  </labels>
+</Workflow>

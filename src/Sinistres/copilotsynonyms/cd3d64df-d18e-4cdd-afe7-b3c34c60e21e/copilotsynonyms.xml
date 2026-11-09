@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="cd3d64df-d18e-4cdd-afe7-b3c34c60e21e">
+  <columnlogicalname>training_typedesinistre</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="nature, catégorie, type de dommage">
+    <label description="nature, catégorie, type de dommage" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

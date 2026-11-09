@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.Fallback">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique système se déclenche quand l’énoncé de l’utilisateur ne correspond à aucune rubrique existante.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Secours</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

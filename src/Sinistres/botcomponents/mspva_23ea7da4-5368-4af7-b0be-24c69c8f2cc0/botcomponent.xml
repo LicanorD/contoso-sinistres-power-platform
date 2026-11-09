@@ -1,0 +1,12 @@
+<botcomponent schemaname="mspva_23ea7da4-5368-4af7-b0be-24c69c8f2cc0">
+  <category>Testing</category>
+  <componenttype>19</componenttype>
+  <description>Évaluer Assistant de gestionnaire</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Évaluer Assistant de gestionnaire</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

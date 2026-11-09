@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.ThankYou">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique se déclenche lorsque l’utilisateur dit merci.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Merci</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

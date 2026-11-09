@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="d7c01aff-575c-4928-a373-a568c44b4446">
+  <columnlogicalname>training_formule</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>6e2076f5-2299-4acf-8b79-d0384135cbc3</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="niveau de garantie, offre, couverture">
+    <label description="niveau de garantie, offre, couverture" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

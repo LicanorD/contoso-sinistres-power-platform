@@ -1,0 +1,56 @@
+kind: AdaptiveDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: numDossier
+    description: Numéro du dossier de sinistre, au format S- suivi de 4 chiffres, par exemple S-0012
+    shouldPromptUser: true
+
+  - kind: AutomaticTaskInput
+    propertyName: txtNote
+    description: Texte de la note que le gestionnaire veut ajouter au dossier
+    shouldPromptUser: true
+
+modelDescription: Résume un dossier de sinistre et y ajoute une note du gestionnaire. À utiliser dès que l’utilisateur demande d’ajouter une note, un commentaire ou une remarque à un dossier.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    triggerQueries:
+      - résume un dossier de sinistre
+      - ajoute une note à un dossier de sinistre
+      - résumé du dossier de sinistre avec note
+      - faire le résumé d'un sinistre et ajouter une note
+      - peux-tu résumer ce dossier de sinistre et y mettre une note
+      - synthèse du dossier de sinistre plus annotation
+      - récapitule le dossier de sinistre et ajoute une remarque
+      - résumer et annoter un dossier de sinistre
+      - donne-moi le résumé du dossier de sinistre avec une note
+
+  actions:
+    - kind: InvokeFlowAction
+      id: invokeFlowAction_kXHVpL
+      input:
+        binding:
+          text: =Topic.numDossier
+          text_1: =Topic.txtNote
+
+      output:
+        binding:
+          message: Topic.Message
+          sinistre: Topic.sinistre
+
+      flowId: c62f0eea-c2d6-f111-84e8-00224838d660
+
+inputType:
+  properties:
+    numDossier:
+      displayName: numDossier
+      description: Numéro du dossier de sinistre, au format S- suivi de 4 chiffres, par exemple S-0012
+      type: String
+
+    txtNote:
+      displayName: txtNote
+      description: Texte de la note que le gestionnaire veut ajouter au dossier
+      type: String
+
+outputType: {}

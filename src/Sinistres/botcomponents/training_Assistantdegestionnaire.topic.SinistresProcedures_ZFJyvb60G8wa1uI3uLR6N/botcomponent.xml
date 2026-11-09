@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.SinistresProcedures_ZFJyvb60G8wa1uI3uLR6N">
+  <componenttype>16</componenttype>
+  <description>Cette source de connaissances offre les informations disponibles dans SinistresProcedures SharePoint.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>SinistresProcedures</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

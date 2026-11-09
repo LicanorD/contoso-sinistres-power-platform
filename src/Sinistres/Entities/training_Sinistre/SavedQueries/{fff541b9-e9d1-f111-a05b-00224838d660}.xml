@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{fff541b9-e9d1-f111-a05b-00224838d660}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="training_sinistrename" select="1" icon="1" preview="1">
+        <row name="result" id="training_sinistreid">
+          <cell name="training_sinistrename" width="200" />
+          <cell name="training_contrat" width="100" />
+          <cell name="training_assure" width="100" />
+          <cell name="training_datededeclaration" width="149" />
+          <cell name="training_datedesurvenance" width="150" />
+          <cell name="training_delaidepuisladeclaration" width="190" />
+          <cell name="training_description" width="106" />
+          <cell name="training_montantaccorde" width="135" />
+          <cell name="training_montantestime" width="128" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="training_sinistre">
+          <attribute name="training_sinistrename" />
+          <attribute name="training_sinistreid" />
+          <filter type="and">
+            <condition attribute="training_statutdusinistre" operator="ne" value="960740004" />
+          </filter>
+          <attribute name="training_contrat" />
+          <attribute name="training_assure" />
+          <attribute name="training_datededeclaration" />
+          <attribute name="training_datedesurvenance" />
+          <attribute name="training_description" />
+          <attribute name="training_delaidepuisladeclaration" />
+          <attribute name="training_montantaccorde" />
+          <attribute name="training_montantestime" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Mes sinistres ouverts" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

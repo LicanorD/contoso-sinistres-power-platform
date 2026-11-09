@@ -1,0 +1,15 @@
+<botcomponent schemaname="mspva_d53c4d68-fcd8-4ac4-8601-9c7e1ad88064">
+  <category>Testing</category>
+  <componenttype>19</componenttype>
+  <description>Has the payment been issued for claim S-0076?</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Has the payment been issued for claim S-0076?</name>
+  <parentbotcomponentid>
+    <schemaname>mspva_23ea7da4-5368-4af7-b0be-24c69c8f2cc0</schemaname>
+  </parentbotcomponentid>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,15 @@
+<botcomponent schemaname="mspva_d504f20e-7a4d-403d-afd0-2b6865a834f0">
+  <category>Testing</category>
+  <componenttype>19</componenttype>
+  <description>Can you tell me the amount and dates for claim S-0198?</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Can you tell me the amount and dates for claim S-0198?</name>
+  <parentbotcomponentid>
+    <schemaname>mspva_23ea7da4-5368-4af7-b0be-24c69c8f2cc0</schemaname>
+  </parentbotcomponentid>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,15 @@
+<botcomponent schemaname="mspva_111ff637-0c42-4107-a66d-2d23f452c011">
+  <category>Testing</category>
+  <componenttype>19</componenttype>
+  <description>Where can I find the procedure for handling water damage claims?</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Where can I find the procedure for handling water damage claims?</name>
+  <parentbotcomponentid>
+    <schemaname>mspva_23ea7da4-5368-4af7-b0be-24c69c8f2cc0</schemaname>
+  </parentbotcomponentid>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

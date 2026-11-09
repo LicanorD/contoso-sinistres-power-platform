@@ -1,0 +1,46 @@
+kind: AdaptiveDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: numDossier
+    description: Il s'agit du numéro du dossier donné dans la colonne Sinistre Name
+    entity: StringPrebuiltEntity
+    shouldPromptUser: true
+
+modelDescription: "Affiche l’état complet d’un dossier de sinistre à partir de son numéro (format S-xxxx) : statut, type, montants, dates, contrat et dernières notes. À utiliser dès que l’utilisateur cite un numéro de dossier, par exemple « où en est le dossier S-0012 ? », « état du S-0003 », « résume le dossier S-0007"
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: InvokeFlowAction
+      id: invokeFlowAction_IVsWOP
+      displayName: Consulter un dossier
+      input:
+        binding:
+          text: =Topic.numDossier
+
+      output:
+        binding:
+          lastnotes: Topic.notes
+          response: Topic.response
+
+      flowId: 88f2e090-2ed8-f111-84e8-6045bd1ace1d
+
+inputType:
+  properties:
+    numDossier:
+      displayName: numDossier
+      description: Il s'agit du numéro du dossier donné dans la colonne Sinistre Name
+      type: String
+
+outputType:
+  properties:
+    notes:
+      displayName: notes
+      description: Dernières notes du dossier, une par ligne, avec leur date et leur auteur.
+      type: String
+
+    response:
+      displayName: response
+      description: "Fiche du dossier de sinistre : statut, type, description, assuré, contrat, montants et dates."
+      type: String

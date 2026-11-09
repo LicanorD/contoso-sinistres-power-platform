@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.Signin">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique système se déclenche quand l’assistant doit connecter l’utilisateur ou lui demander de se connecter</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Se connecter </name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

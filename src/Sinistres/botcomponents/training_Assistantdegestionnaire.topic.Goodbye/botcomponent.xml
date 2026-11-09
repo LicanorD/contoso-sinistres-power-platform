@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.Goodbye">
+  <componenttype>9</componenttype>
+  <description>Cette rubrique se déclenche quand l’utilisateur dit au revoir. Par défaut, elle ne termine pas la conversation. Si vous souhaitez terminer la conversation quand l’utilisateur dit au revoir, vous pouvez ajouter une action « Fin de la conversation » à cette rubrique, ou rediriger vers la rubrique système « Fin de la conversation ».</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Au revoir</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

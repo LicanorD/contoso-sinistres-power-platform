@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.Contrat_Sinistre_GW8weFxVGpl69VMJQa7rH">
+  <componenttype>16</componenttype>
+  <description>Données des dossiers de sinistre et des contrats d’assurance de Contoso Assurances : numéro de dossier (format S-0012), statut (Déclaré, Instruction, Expertise, Décision, Clôturé), type de sinistre, description des faits, montants estimé et accordé, dates de survenance et de déclaration, assuré, et contrat associé (numéro, formule, date d’effet). À utiliser pour consulter l’état ou le détail d’un dossier ou d’un contrat. Cette source sert uniquement à la consultation : pour ajouter une note à un dossier, utiliser la rubrique dédiée.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Contrat, Sinistre</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

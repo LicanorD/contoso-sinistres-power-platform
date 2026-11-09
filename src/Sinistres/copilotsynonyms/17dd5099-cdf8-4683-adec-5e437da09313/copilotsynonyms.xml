@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="17dd5099-cdf8-4683-adec-5e437da09313">
+  <columnlogicalname>training_numero</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>2fc9bad8-82cf-451a-b3d3-d083520982e8</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="numéro de dossier, référence, n° de sinistre">
+    <label description="numéro de dossier, référence, n° de sinistre" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

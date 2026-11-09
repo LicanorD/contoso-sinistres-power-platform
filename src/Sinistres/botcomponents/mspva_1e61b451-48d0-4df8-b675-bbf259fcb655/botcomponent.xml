@@ -1,0 +1,15 @@
+<botcomponent schemaname="mspva_1e61b451-48d0-4df8-b675-bbf259fcb655">
+  <category>Testing</category>
+  <componenttype>19</componenttype>
+  <description>Can you tell me the procedure for approving a claim?</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Can you tell me the procedure for approving a claim?</name>
+  <parentbotcomponentid>
+    <schemaname>mspva_23ea7da4-5368-4af7-b0be-24c69c8f2cc0</schemaname>
+  </parentbotcomponentid>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

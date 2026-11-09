@@ -1,0 +1,14 @@
+<copilotglossaryterm copilotglossarytermid="69a85ca7-8912-4f61-873f-7c2225373e50">
+  <description default="Formule intermédiaire">
+    <label description="Formule intermédiaire" languagecode="1036" />
+  </description>
+  <iscustomizable>0</iscustomizable>
+  <skill>
+    <dvtablesearchid>28f39135-0139-4a5c-9cf3-b800907763eb</dvtablesearchid>
+  </skill>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <term default="Confort">
+    <label description="Confort" languagecode="1036" />
+  </term>
+</copilotglossaryterm>

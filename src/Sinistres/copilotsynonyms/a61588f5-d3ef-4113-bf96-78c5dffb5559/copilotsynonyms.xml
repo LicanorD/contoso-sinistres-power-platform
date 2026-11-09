@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="a61588f5-d3ef-4113-bf96-78c5dffb5559">
+  <columnlogicalname>training_contratname</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>6e2076f5-2299-4acf-8b79-d0384135cbc3</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="numéro de police, numéro de contrat, référence du contrat">
+    <label description="numéro de police, numéro de contrat, référence du contrat" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>
