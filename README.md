@@ -334,6 +334,7 @@ Paiement des indemnités, gestion des experts, multilingue, données réelles.
 ## Démo
 
 Consultation d'un dossier, ajout d'une note, vérification dans Dataverse et procédure interne, depuis Teams.
+
 https://github.com/user-attachments/assets/5027d88b-8289-4f1d-8a12-61e397efe92d
 
 ## Avancement
