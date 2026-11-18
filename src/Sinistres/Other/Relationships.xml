@@ -32,9 +32,9 @@
   <EntityRelationship Name="team_training_echange" />
   <EntityRelationship Name="team_training_sinistre" />
   <EntityRelationship Name="team_training_typedesinistre" />
-  <EntityRelationship Name="training_Contact_training_Contact_training_Contrat" />
+  <EntityRelationship Name="training_contrat_assurecontact_contact" />
   <EntityRelationship Name="training_Contrat_training_Contrat_training_Sinistre" />
-  <EntityRelationship Name="training_sinistre_Assure_training_contact" />
+  <EntityRelationship Name="training_sinistre_assurecontact_contact" />
   <EntityRelationship Name="training_Sinistre_training_Sinistre_training_Echange" />
   <EntityRelationship Name="training_Typedesinistre_training_Typedesinistre_training_Sinistre" />
   <EntityRelationship Name="user_training_contact" />

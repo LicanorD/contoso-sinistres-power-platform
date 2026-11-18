@@ -1,0 +1,12 @@
+<copilotsynonyms copilotsynonymsid="03abb44d-e3ba-4b19-b21e-72ad97070459">
+  <columnlogicalname>training_assurecontact</columnlogicalname>
+  <iscustomizable>0</iscustomizable>
+  <skillentity>
+    <dvtablesearchentityid>6e2076f5-2299-4acf-8b79-d0384135cbc3</dvtablesearchentityid>
+  </skillentity>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <synonyms default="client, souscripteur, titulaire">
+    <label description="client, souscripteur, titulaire" languagecode="1036" />
+  </synonyms>
+</copilotsynonyms>

@@ -650,11 +650,11 @@
             <Description description="Utilisation interne uniquement." languagecode="1036" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="training_Contact">
+        <attribute PhysicalName="training_assurecontact">
           <Type>lookup</Type>
-          <Name>training_contact</Name>
-          <LogicalName>training_contact</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <Name>training_assurecontact</Name>
+          <LogicalName>training_assurecontact</LogicalName>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
@@ -662,7 +662,7 @@
           <IsCustomField>1</IsCustomField>
           <IsAuditEnabled>0</IsAuditEnabled>
           <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IntroducedVersion>1.0.2.0</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
           <IsRenameable>1</IsRenameable>
           <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -682,7 +682,7 @@
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
-            <displayname description="Contact" languagecode="1036" />
+            <displayname description="Assuré" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1036" />

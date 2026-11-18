@@ -12,7 +12,7 @@
         <row name="result" id="training_sinistreid">
           <cell name="training_sinistrename" width="200" />
           <cell name="training_contrat" width="100" />
-          <cell name="training_assure" width="100" />
+          <cell name="training_assurecontact" width="100" />
           <cell name="training_datededeclaration" width="149" />
           <cell name="training_datedesurvenance" width="150" />
           <cell name="training_delaidepuisladeclaration" width="190" />
@@ -34,7 +34,6 @@
             <condition attribute="training_statutdusinistre" operator="eq" value="960740000" />
           </filter>
           <attribute name="training_contrat" />
-          <attribute name="training_assure" />
           <attribute name="training_datededeclaration" />
           <attribute name="training_datedesurvenance" />
           <attribute name="training_delaidepuisladeclaration" />
@@ -43,6 +42,7 @@
           <attribute name="training_statutdusinistre" />
           <attribute name="training_montantaccorde" />
           <attribute name="training_montantestime" />
+          <attribute name="training_assurecontact" />
         </entity>
       </fetch>
     </fetchxml>

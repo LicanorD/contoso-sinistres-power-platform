@@ -11,6 +11,8 @@
   <NavigationType>0</NavigationType>
   <AppModuleComponents>
     <AppModuleComponent type="1" schemaName="activitypointer" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="1" schemaName="training_contrat" />
     <AppModuleComponent type="1" schemaName="training_sinistre" />
     <AppModuleComponent type="60" id="{39357ca6-efd1-f111-a05b-00224838d660}" />
     <AppModuleComponent type="62" schemaName="training_Gestiondessinistres" />

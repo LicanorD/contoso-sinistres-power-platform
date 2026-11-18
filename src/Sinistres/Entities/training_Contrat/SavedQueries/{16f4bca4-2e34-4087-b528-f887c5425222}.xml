@@ -16,7 +16,6 @@
           <cell name="training_formule" width="100" />
           <cell name="training_datedeffet" width="105" />
           <cell name="training_contratid" width="100" />
-          <cell name="training_contact" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -34,7 +33,6 @@
           <attribute name="training_numero" />
           <attribute name="training_formule" />
           <attribute name="training_datedeffet" />
-          <attribute name="training_contact" />
         </entity>
       </fetch>
     </fetchxml>

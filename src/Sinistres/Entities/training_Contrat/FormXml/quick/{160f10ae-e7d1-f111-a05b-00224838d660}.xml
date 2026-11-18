@@ -51,11 +51,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{08896b72-2e92-4ca0-a770-0ab0aa0c1278}" locklevel="0" colspan="1" rowspan="1" labelid="{152c0e66-27d8-4a68-821d-d575aba46555}">
+                      <cell id="{6ea6d83a-e356-40a7-835e-c0b65f612b25}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="Contact" languagecode="1036" />
+                          <label description="Assuré" languagecode="1036" />
                         </labels>
-                        <control id="training_contact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="training_contact" disabled="false" />
+                        <control id="training_assurecontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="training_assurecontact" disabled="false" />
                       </cell>
                     </row>
                   </rows>

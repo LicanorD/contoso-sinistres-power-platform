@@ -80,6 +80,7 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="2" />
       <RootComponent type="1" schemaName="training_contact" behavior="0" />
       <RootComponent type="1" schemaName="training_contrat" behavior="0" />
       <RootComponent type="1" schemaName="training_echange" behavior="0" />
@@ -101,6 +102,10 @@
       <RootComponent type="9" schemaName="training_essentiel" behavior="0" />
     </RootComponents>
     <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="contact" displayName="Contact" parentSchemaName="" solution="msdynce_PortalPrivacyExtensions (9.2.10.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
           <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>

@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{01092173-3351-4596-9050-82E6AE095084}" IsUserDefined="1">
           <labels>
@@ -60,11 +60,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{22071a21-2c33-4b53-a382-6d964d1ac5ed}" locklevel="0" rowspan="1" colspan="1">
+                      <cell id="{f229f5e0-5ca2-45df-b6d5-2b69c801cb5d}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="Contact" languagecode="1036" />
+                          <label description="Assuré" languagecode="1036" />
                         </labels>
-                        <control id="training_contact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="training_contact" disabled="false" />
+                        <control id="training_assurecontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="training_assurecontact" disabled="false" />
                       </cell>
                     </row>
                   </rows>

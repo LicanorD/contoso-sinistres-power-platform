@@ -18,6 +18,7 @@
           <cell name="training_datedesurvenance" width="150" />
           <cell name="training_delaidepuisladeclaration" width="146" />
           <cell name="training_statutdusinistre" width="135" />
+          <cell name="training_assurecontact" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -38,6 +39,7 @@
           <attribute name="training_description" />
           <attribute name="training_statutdusinistre" />
           <attribute name="training_typedesinistre" />
+          <attribute name="training_assurecontact" />
         </entity>
       </fetch>
     </fetchxml>
