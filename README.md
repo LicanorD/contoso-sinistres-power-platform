@@ -4,23 +4,6 @@ Projet de démonstration sur la Power Platform : une application de gestion des 
 
 > Projet personnel, construit dans un environnement de développement. Les données et l'entreprise sont fictives.
 
-## Démo
-
-Consultation d'un dossier, ajout d'une note, vérification dans Dataverse et procédure interne, depuis Teams.
-
-https://github.com/user-attachments/assets/5027d88b-8289-4f1d-8a12-61e397efe92d
-
-## Où en est le projet
-
-| Brique | État |
-| --- | --- |
-| Modèle de données Dataverse et application model-driven | Livré (28 octobre 2026) |
-| Règles métier, flux de processus métier, rôles de sécurité, flux d'approbation | Livré |
-| Courriel à l'assuré à chaque changement de statut | À venir |
-| Agent Copilot Studio « Assistant de gestionnaire » dans Teams | Livré (9 novembre 2026) ; évalué à 15/15 et cas d'échec traités (18 novembre 2026) |
-| Portail Power Pages et agent du portail | À venir (novembre – décembre 2026) |
-| Sandbox Test et déploiement par pipeline | À venir (à partir du 30 novembre 2026) |
-
 ## Sommaire
 
 - [Contexte](#contexte)
@@ -234,39 +217,15 @@ Le choix d'un labo n'est pas qu'un sujet technique : il croise le type d'environ
 
 L'agent interne aide les gestionnaires de Contoso Assurances à instruire les sinistres, depuis Teams.
 
-| Récit | Ce que l'agent fait | Par quel moyen |
-| --- | --- | --- |
-| 8 | Répond à une question de procédure | Connaissances : site SharePoint « Sinistres – Procédures » |
-| 8 | Donne l'état complet d'un dossier à partir de son numéro | Rubrique « Consulter un dossier » + flux d'agent qui lit Dataverse |
-| 9 | Ajoute une note à un dossier | Rubrique « Résumer un dossier et ajouter une note » + flux d'agent qui écrit dans la table Échange |
-| — | Répond à une question ouverte sur les dossiers et les contrats | Connaissances : tables Dataverse Sinistre et Contrat |
-| — | Transmet à un gestionnaire une question à laquelle il n'a pas de réponse | Rubrique « Transmettre une question » + le même flux d'agent qui crée un échange |
+| Récit | Ce que l'agent fait |
+| --- | --- |
+| 8 | Répond à une question de procédure (site SharePoint « Sinistres – Procédures ») ou donne l'état d'un dossier (Dataverse) |
+| 9 | Résume un dossier et y ajoute une note (flux d'agent) |
 
 Règles :
 
 - il ne répond qu'à partir de ses sources ;
 - face à une question hors périmètre, il le dit au lieu d'inventer.
-
-### Comment il est construit
-
-```mermaid
-flowchart LR
-    Q["Question du gestionnaire"] --> O["Orchestration générative"]
-    O -->|numéro de dossier| R1["Rubrique « Consulter un dossier »"]
-    O -->|ajout d'une note| R2["Rubrique « Résumer un dossier et ajouter une note »"]
-    O -->|procédure, question ouverte| K["Connaissances SharePoint et Dataverse"]
-    O -->|pas de réponse dans les sources| R3["Rubrique « Transmettre une question »"]
-    R1 --> F1["Flux d'agent : lecture du sinistre, du contrat et des échanges"]
-    R2 --> F2["Flux d'agent : création d'un échange"]
-    R3 --> F2
-    F1 --> D[("Dataverse")]
-    F2 --> D
-```
-
-- **Trois rubriques avec des entrées** (numéro du dossier, texte de la note, question à transmettre) : l'orchestrateur extrait les valeurs de la conversation et ne pose une question que si l'une d'elles manque.
-- **Deux flux d'agent** : l'un retrouve le dossier par son numéro et renvoie une fiche en texte (statut, type, assuré, contrat, montants, dates, dernières notes) ; l'autre ajoute une note. Si le numéro n'existe pas, le premier répond « Aucun dossier S-xxxx trouvé » au lieu de renvoyer une fiche vide.
-- **Des sorties de rubrique** : la fiche est transmise à l'orchestrateur, qui la met en forme.
-- **Une transmission avec confirmation** : quand la réponse n'est pas dans ses sources, l'agent le dit et propose de transmettre la question. Si l'utilisateur accepte, il confirme le dossier et la question, puis crée un échange qui commence par « Question transmise par l'agent : ». La question est une entrée de la rubrique, remplie par l'orchestrateur : au moment du déclenchement, le dernier message de l'utilisateur est « oui », pas la question.
 
 ### Les choix de configuration
 
@@ -283,52 +242,16 @@ flowchart LR
 
 ### Instructions de l'agent
 
-> Tu es l'assistant gestionnaire dédié aux sinistres. Ton rôle est d'assister le gestionnaire qui te sollicite pour connaître :
-> - une procédure concernant un sinistre ;
-> - l'état d'un dossier ;
-> - lui faire le résumé d'un dossier.
->
-> Tu ne dois citer que les documents que le gestionnaire connecté a le droit de lire. Tu ne dois pas inventer. Si une question est hors de ton périmètre, dis-le au lieu d'inventer.
->
-> Tes sources sont le site SharePoint que je t'ai partagé, les tables Dataverse Sinistre et Contrat.
->
-> Lors d'une question sur un dossier, identifie-le par son numéro (exemple de format : S-0001). Donne son statut, son type, ses montants et dates. N'invente rien.
->
-> Pour ajouter une note à un dossier, utilise toujours la rubrique « Résumer un dossier et ajouter une note ». Ne dis jamais que tu ne peux pas ajouter de note.
->
-> Ne fais aucune supposition au-delà des données renvoyées. Si une information manque, dis seulement qu'elle n'est pas disponible.
->
-> Dès que l'utilisateur mentionne un numéro de dossier (S-xxxx), utilise toujours la rubrique « Consulter un dossier » plutôt que les connaissances.
->
-> Présente les fiches de dossier sous forme de liste à puces, sans rien ajouter qui ne figure pas dans les données.
->
-> Si la question n'a aucun rapport avec les sinistres, les contrats ou les procédures, ne cherche pas dans tes sources et réponds uniquement : « Je suis l'assistant des gestionnaires de sinistres : je peux vous aider sur les dossiers, les contrats et les procédures internes. »
->
-> Si une question concerne la gestion des sinistres mais que la réponse n'est pas dans tes sources, dis-le clairement et propose à l'utilisateur de transmettre sa question à un gestionnaire.
+> Tu es l'assistant des gestionnaires de sinistres de Contoso Assurances.
+> - Réponds en français, de façon brève et factuelle.
+> - Pour une question de procédure, appuie-toi uniquement sur les documents du site « Sinistres – Procédures » et cite le document utilisé.
+> - Pour une question sur un dossier, identifie-le par son numéro (format S-0001) et donne son statut, son type, ses montants et ses dates.
+> - Si l'information n'est pas dans tes sources, dis-le clairement et n'invente rien.
+> - Ne réponds pas aux questions sans rapport avec la gestion des sinistres.
 
-L'utilisation des connaissances générales du modèle est désactivée : sans elle, l'agent dit qu'il ne sait pas au lieu d'inventer une procédure.
+### Connaissances Dataverse
 
-### Évaluation
-
-Un jeu de 15 questions en français, avec leur réponse attendue : 8 sur la procédure dégât des eaux, 4 sur un dossier, 1 qui croise un dossier et la procédure, 2 cas d'échec (dossier inexistant, question hors sujet). Méthode « Correspondance de sens », seuil de réussite à 70/100.
-
-| Passage | Résultat | Ce qui a changé |
-| --- | --- | --- |
-| 16 novembre 2026 | 13/15 | — |
-| 17 novembre 2026 | 15/15 | Procédure en version 1.1, descriptions des sources de connaissances |
-
-Les deux échecs du premier passage :
-
-- **Le délai d'accusé de réception (48 heures).** L'agent trouvait le bon document mais remontait le passage de l'étape 1, qui parle de l'accusé de réception sans délai. Le délai n'était que dans un tableau en tête du document. Correction : le délai est repris dans l'étape elle-même.
-- **La franchise de la formule Confort.** L'agent cherchait dans la table Contrat, parce que le mot « formule » est dans le glossaire Dataverse. Correction : la franchise est reprise dans l'étape de décision, et chaque source de connaissances dit dans sa description ce qu'elle contient et ce qu'elle ne contient pas.
-
-Un faux positif aussi : l'évaluateur a noté 100/100 une fiche vide pour un dossier inexistant. Le score ne dispense pas de lire les réponses. Le flux renvoie désormais « Aucun dossier S-9999 trouvé ».
-
-### Connaissances
-
-**SharePoint** : le site « Sinistres – Procédures », avec la procédure de déclaration, le barème, la FAQ et la procédure « Dégât des eaux » (PROC-DDE-01).
-
-**Dataverse** : les tables Sinistre et Contrat, avec une description de la source, des synonymes et un glossaire. Prérequis :
+**Prérequis :**
 
 - la recherche Dataverse est activée dans l'environnement ;
 - les tables Sinistre et Contrat sont indexées ;
@@ -389,29 +312,8 @@ La recherche Dataverse est un index plein texte, qui respecte les rôles de séc
 - **Un essai déjà expiré.** La licence « Version d'évaluation de l'offre virale de Microsoft Copilot Studio » s'était attribuée automatiquement lors d'une première visite de Copilot Studio, sans courriel ni date visible. Elle avait expiré : les connaissances étaient bloquées jusqu'à la prolongation de 30 jours, faite le 29 octobre.
 - **Une offre trompeuse dans le centre d'administration.** La « licence utilisateur Copilot Studio » à 0 € donne l'accès à Copilot Studio, mais pas les crédits qui font tourner les agents. Je ne l'ai pas prise.
 - **Un mauvais moteur au premier essai.** Mon premier agent, créé depuis la solution, est parti sur le moteur GitHub Copilot : pas de connaissances Dataverse, et des crédits consommés dès les tests. Je l'ai supprimé et recréé sur le moteur standard. Le moteur se choisit à la création et ne se change pas après.
-- **Coûts.** Sans pack de crédits ni paiement à l'usage, rien ne peut être facturé. Les flux d'agent et les évaluations consomment en revanche l'allocation de l'essai : une seule évaluation de dix questions a suffi à atteindre la limite d'usage.
-
-**Fiabilité des réponses**
-
-- **Identifiant exact : un outil déterministe, pas la recherche sémantique.** Pour « Où en est le dossier S-0012 ? », les connaissances Dataverse trouvaient le dossier une fois sur deux, selon la reformulation de la recherche. Une rubrique et un flux d'agent qui filtre sur le numéro donnent la même réponse à chaque fois. Les connaissances restent pour les questions ouvertes et les procédures.
-- **Un agent ne répond pas mieux que les données qu'on lui transmet.** Le flux renvoyait d'abord le JSON brut de Dataverse : l'agent n'y voyait que des champs système. Avec une fiche en texte, construite à partir des valeurs formatées, la réponse est juste et complète.
-- **Le fuseau horaire.** Une date saisie le 13 septembre est stockée « 12 septembre à 22 h UTC ». L'agent affichait le 12. Le flux utilise désormais la valeur formatée dans le fuseau de l'utilisateur.
-- **Les sorties de rubrique.** Le résultat du flux doit être associé à une variable de sortie de la rubrique pour arriver jusqu'à l'orchestrateur. Après chaque changement des sorties du flux, le nœud de la rubrique est à rafraîchir.
-
-**Dataverse et Power Automate**
-
-- **On cherche avec le numéro, on relie avec le GUID.** Pour rattacher un échange à un sinistre, il faut l'identifiant technique de la ligne, pas « S-0012 ». Pour filtrer sur une colonne de recherche, la syntaxe est `_nom_value eq GUID`, sans apostrophes.
-- **Des réponses de flux au schéma identique.** Quand un flux d'agent a plusieurs actions de réponse (dossier trouvé ou introuvable), elles doivent renvoyer exactement les mêmes sorties.
-- **Une numérotation mal formatée.** Le format de numérotation automatique produisait « S--0012 ». L'agent l'a signalé lui-même. J'ai corrigé le format, puis les lignes existantes avec un script PowerShell (module Microsoft.Xrm.Data.PowerShell).
-- **Une colonne texte limitée à 100 caractères.** C'est la longueur par défaut d'une colonne texte. Un message construit par concaténation l'a dépassée : la colonne Message de la table Échange est passée à 2 000 caractères. Le flux gardait l'ancienne limite dans son schéma : il a fallu recréer l'action Dataverse.
-- **Une suppression accidentelle.** Un dossier de test supprimé par erreur n'a pas pu être restauré : la corbeille Dataverse n'est pas disponible dans un environnement développeur. J'ai recréé la ligne par script, puis verrouillé la suppression par la règle de relation.
-
-**Publication**
-
-- **Les flux d'agent s'exécutent avec les identifiants de l'auteur.** Copilot Studio le signale à la publication. Acceptable pour une démonstration à un seul utilisateur ; en production, je passerais aux identifiants de l'utilisateur final ou à un compte de service à privilèges minimaux.
-- **Les rubriques système ont leurs propres messages.** Une question hors périmètre déclenche la rubrique de secours, dont le message générique ne dépend pas des instructions de l'agent. À personnaliser à part.
-- **Un jeu d'évaluation généré en anglais.** Le jeu de tests proposé automatiquement était en anglais et sans rapport avec le cahier des charges. Je l'ai remplacé par mes propres questions, en français, avec leur réponse attendue (voir [Évaluation](#évaluation)).
-- **Un flux d'agent modifié mais pas publié.** L'agent appelle la version publiée du flux : après une modification, enregistrer ne suffit pas.
+- **Coûts.** Les tests dans le panneau de test ne consomment pas de crédits sur le moteur standard. Les évaluations, les flux d'agent et les prompts en consomment. Sans pack de crédits ni paiement à l'usage, rien ne peut être facturé.
+- Les flux d’agent s’exécutent avec les identifiants de l’auteur. Acceptable pour une démo à un seul utilisateur ; en production, je passerais aux identifiants de l’utilisateur final ou à un compte de service à privilèges minimaux.
 
 ### Ce que j'en retiens
 
@@ -439,11 +341,10 @@ Paiement des indemnités, gestion des experts, multilingue, données réelles.
 
 ## Avancement
 
-- [x] Phase 0 – Mise en place
-- [x] Phase 1 – Dataverse et model-driven (28 octobre 2026)
-- [x] Labo – passage en environnement géré (28 octobre 2026)
-- [x] Phase 2 – Copilot Studio : agent publié dans Teams (9 novembre 2026), évalué et cas d'échec traités (18 novembre 2026)
-- [ ] Phase 3 – Power Pages
+- [ ] Phase 0 – Mise en place
+- [ ] Phase 1 – Dataverse et model-driven
+- [ ] Phase 2 – Power Pages
+- [ ] Phase 3 – Copilot Studio
 - [ ] Phase 4 – Industrialisation et vitrine
 - [ ] Phase 5 – Administration
 - [ ] Phase 6 – Agents avancés
