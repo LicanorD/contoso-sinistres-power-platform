@@ -24,7 +24,7 @@
                         <labels>
                           <label description="Contrat" languagecode="1036" />
                         </labels>
-                        <control id="bpf_training_sinistre_training_statusprocessus:training_contrat" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="training_contrat" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_contrat" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="training_contrat" disabled="false" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" />
                       </cell>
                     </row>
                     <row>
@@ -32,7 +32,7 @@
                         <labels>
                           <label description="Type de sinistre" languagecode="1036" />
                         </labels>
-                        <control id="bpf_training_sinistre_training_statusprocessus:training_typedesinistre" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="training_typedesinistre" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_typedesinistre" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="training_typedesinistre" disabled="false" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" />
                       </cell>
                     </row>
                     <row>
@@ -40,7 +40,7 @@
                         <labels>
                           <label description="Date de survenance" languagecode="1036" />
                         </labels>
-                        <control id="bpf_training_sinistre_training_statusprocessus:training_description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="training_description" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="training_description" disabled="false" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" />
                       </cell>
                     </row>
                   </rows>
@@ -49,40 +49,14 @@
             </column>
           </columns>
         </tab>
-        <tab verticallayout="true" id="{965c1561-60bf-46ac-82bb-3d9ba8819f63}" name="StageStep11" locklevel="0" expanded="true" visible="false" labelid="{9217197a-ff54-4849-a790-a8a9e9787f4f}">
-          <labels>
-            <label description="Expertise" languagecode="1036" />
-          </labels>
-          <columns>
-            <column width="100%">
-              <sections>
-                <section showbar="false" columns="1" id="{9c10cb06-83bc-0aae-cdac-7814ce660d05}" name="StageStep11_section1" labelid="{b00f2b92-e9c3-4eb0-935b-1fbf2424ee60}">
-                  <labels>
-                    <label description="Expertise" languagecode="1036" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{8de013d1-412c-4b75-a34b-6f4ad45ff954}" showlabel="true" visible="true" labelid="{0af129be-5cb8-4945-993e-7717a636ce4b}">
-                        <labels>
-                          <label description="Description" languagecode="1036" />
-                        </labels>
-                        <control id="bpf_training_sinistre_training_statusprocessus:training_description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="training_description" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
-                      </cell>
-                    </row>
-                  </rows>
-                </section>
-              </sections>
-            </column>
-          </columns>
-        </tab>
-        <tab verticallayout="true" id="{0b036cc5-7ec9-4e7f-bc5d-7448a79401e7}" name="StageStep15" locklevel="0" expanded="true" visible="false" labelid="{b6419159-efcc-4ca4-a139-4b6655d19c97}">
+        <tab verticallayout="true" id="{0b036cc5-7ec9-4e7f-bc5d-7448a79401e7}" name="StageStep11" locklevel="0" expanded="true" visible="false" labelid="{b6419159-efcc-4ca4-a139-4b6655d19c97}">
           <labels>
             <label description="Instruction" languagecode="1036" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section showbar="false" columns="1" id="{955050fe-4c8c-151c-57a0-680677d468f6}" name="StageStep15_section1" labelid="{9adeb6a6-8d98-4266-ae71-a3d0751b0cf3}">
+                <section showbar="false" columns="1" id="{955050fe-4c8c-151c-57a0-680677d468f6}" name="StageStep11_section1" labelid="{b00f2b92-e9c3-4eb0-935b-1fbf2424ee60}">
                   <labels>
                     <label description="Instruction" languagecode="1036" />
                   </labels>
@@ -92,7 +66,33 @@
                         <labels>
                           <label description="Montant estimé" languagecode="1036" />
                         </labels>
-                        <control id="bpf_training_sinistre_training_statusprocessus:training_montantestime" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="training_montantestime" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="true" disabled="false" />
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_montantestime" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="training_montantestime" disabled="false" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{965c1561-60bf-46ac-82bb-3d9ba8819f63}" name="StageStep15" locklevel="0" expanded="true" visible="false" labelid="{9217197a-ff54-4849-a790-a8a9e9787f4f}">
+          <labels>
+            <label description="Expertise" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{9c10cb06-83bc-0aae-cdac-7814ce660d05}" name="StageStep15_section1" labelid="{9adeb6a6-8d98-4266-ae71-a3d0751b0cf3}">
+                  <labels>
+                    <label description="Expertise" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8de013d1-412c-4b75-a34b-6f4ad45ff954}" showlabel="true" visible="true" labelid="{0af129be-5cb8-4945-993e-7717a636ce4b}">
+                        <labels>
+                          <label description="Description" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="training_description" disabled="false" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" />
                       </cell>
                     </row>
                   </rows>
@@ -118,7 +118,7 @@
                         <labels>
                           <label description="Montant accordé" languagecode="1036" />
                         </labels>
-                        <control id="bpf_training_sinistre_training_statusprocessus:training_montantaccorde" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="training_montantaccorde" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_montantaccorde" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="training_montantaccorde" disabled="false" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" />
                       </cell>
                     </row>
                   </rows>
@@ -144,7 +144,7 @@
                         <labels>
                           <label description="Statut du sinistre" languagecode="1036" />
                         </labels>
-                        <control id="bpf_training_sinistre_training_statusprocessus:training_statutdusinistre" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="training_statutdusinistre" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" disabled="false" />
+                        <control id="bpf_training_sinistre_training_statusprocessus:training_statutdusinistre" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="training_statutdusinistre" disabled="false" relationship="bpf_training_sinistre_training_statusprocessus" isrequired="false" />
                       </cell>
                     </row>
                   </rows>

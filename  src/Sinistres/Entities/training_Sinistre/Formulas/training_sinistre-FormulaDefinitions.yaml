@@ -1,1 +1,0 @@
-training_delaidepuisladeclaration: =DateDiff(training_datededeclaration, Now(), TimeUnit.Days)

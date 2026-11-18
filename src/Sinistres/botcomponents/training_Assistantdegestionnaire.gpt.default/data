@@ -19,6 +19,8 @@ instructions: |-
   Présente les fiches de dossier sous forme de liste à puces, sans rien ajouter qui ne figure pas dans les données.
 
   Si la question n’a aucun rapport avec les sinistres, les contrats ou les procédures, ne cherche pas dans tes sources et réponds uniquement : "Je suis l’assistant des gestionnaires de sinistres : je peux vous aider sur les dossiers, les contrats et les procédures internes."
+
+  Si une question concerne la gestion des sinistres mais que la réponse n’est pas dans tes sources, dis-le clairement et propose à l’utilisateur de transmettre sa question à un gestionnaire
 gptCapabilities: {}
 aISettings:
   model:

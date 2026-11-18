@@ -5,4 +5,7 @@
   <botcomponent_workflow botcomponentid.schemaname="training_Assistantdegestionnaire.topic.Rsumeundossierdesinistreetajoutes-yunenote" workflowid.workflowid="c62f0eea-c2d6-f111-84e8-00224838d660">
     <iscustomizable>1</iscustomizable>
   </botcomponent_workflow>
+  <botcomponent_workflow botcomponentid.schemaname="training_Assistantdegestionnaire.topic.Transmettreunequestion" workflowid.workflowid="c62f0eea-c2d6-f111-84e8-00224838d660">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_workflow>
 </botcomponent_workflowset>

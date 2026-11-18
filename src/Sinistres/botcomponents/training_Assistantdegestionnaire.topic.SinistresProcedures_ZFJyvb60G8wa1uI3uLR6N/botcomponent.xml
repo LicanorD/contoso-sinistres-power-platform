@@ -1,6 +1,6 @@
 <botcomponent schemaname="training_Assistantdegestionnaire.topic.SinistresProcedures_ZFJyvb60G8wa1uI3uLR6N">
   <componenttype>16</componenttype>
-  <description>Cette source de connaissances offre les informations disponibles dans SinistresProcedures SharePoint.</description>
+  <description>Procédures internes des gestionnaires de sinistres de Contoso Assurances (site « Sinistres – Procédures »). Contient la procédure « Dégât des eaux » (PROC-DDE-01) : ce qui relève ou non du dégât des eaux, les délais à respecter (déclaration, accusé de réception, expertise, décision), les cinq étapes de traitement du dossier (Déclaré, Instruction, Expertise, Décision, Clôturé), la convention IRSI, les seuils d’expertise (1 600 € HT) et d’approbation par le responsable (5 000 €), les garanties, plafonds et franchises selon la formule (Essentiel, Confort, Intégral), les conseils à donner à l’assuré et les points de vigilance. À utiliser pour toute question sur les règles, délais, garanties ou franchises. Ne contient aucune donnée sur un dossier ou un contrat précis : celles-ci sont dans Dataverse.</description>
   <iscustomizable>0</iscustomizable>
   <name>SinistresProcedures</name>
   <parentbotid>

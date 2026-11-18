@@ -1,0 +1,84 @@
+kind: AdaptiveDialog
+inputs:
+  - kind: AutomaticTaskInput
+    propertyName: NumeroDossier
+    description: Numéro du dossier de sinistre, au format S-0000
+    shouldPromptUser: true
+
+  - kind: AutomaticTaskInput
+    propertyName: QuestionTransmise
+    description: La question de l’utilisateur à laquelle l’agent n’a pas pu répondre, reformulée en une phrase
+    shouldPromptUser: true
+
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: Question
+      id: question_jUgmE1
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: init:Topic.choixTransmission
+      prompt: "Je transmets votre question au dossier {Topic.NumeroDossier} : « {Topic.QuestionTransmise} ». Vous confirmez ?"
+      entity:
+        kind: EmbeddedEntity
+        definition:
+          kind: ClosedListEntity
+          items:
+            - id: Oui
+              displayName: Oui
+
+            - id: Non
+              displayName: Non
+
+    - kind: ConditionGroup
+      id: conditionGroup_cY94LT
+      conditions:
+        - id: conditionItem_fcLeG0
+          condition: =Topic.choixTransmission = 'training_Assistantdegestionnaire.topic.Transmettreunequestion.main.question_jUgmE1'.Oui
+          actions:
+            - kind: SetVariable
+              id: setVariable_ZsLf1X
+              variable: Topic.MessageNote
+              value: "=\"Question transmise par l'agent : \" & Topic.QuestionTransmise"
+
+            - kind: InvokeFlowAction
+              id: invokeFlowAction_tAnAWg
+              input:
+                binding:
+                  text: =Topic.NumeroDossier
+                  text_1: =Topic.MessageNote
+
+              output:
+                binding:
+                  message: Topic.Message
+                  sinistre: Topic.sinistre
+
+              flowId: c62f0eea-c2d6-f111-84e8-00224838d660
+
+            - kind: SendActivity
+              id: sendActivity_kuQFUJ
+              activity: "C’est fait : votre question a été ajoutée aux échanges du dossier {Topic.NumeroDossier}. Un gestionnaire la traitera."
+
+        - id: conditionItem_xehs62
+          condition: =Topic.choixTransmission = 'training_Assistantdegestionnaire.topic.Transmettreunequestion.main.question_jUgmE1'.Non
+          actions:
+            - kind: SendActivity
+              id: sendActivity_SYMFSs
+              activity: D’accord, je ne transmets rien.
+
+inputType:
+  properties:
+    NumeroDossier:
+      displayName: NumeroDossier
+      description: Numéro du dossier de sinistre, au format S-0000
+      type: String
+
+    QuestionTransmise:
+      displayName: QuestionTransmise
+      description: La question de l’utilisateur à laquelle l’agent n’a pas pu répondre, reformulée en une phrase
+      type: String
+
+outputType: {}

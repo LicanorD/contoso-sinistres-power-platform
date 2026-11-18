@@ -1,0 +1,11 @@
+<botcomponent schemaname="training_Assistantdegestionnaire.topic.Transmettreunequestion">
+  <componenttype>9</componenttype>
+  <description>Transmet à un gestionnaire une question sur un dossier de sinistre à laquelle l’agent n’a pas pu répondre. À utiliser quand l’utilisateur accepte que sa question soit transmise</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Transmettre une question</name>
+  <parentbotid>
+    <schemaname>training_Assistantdegestionnaire</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,6 +1,8 @@
 <botcomponent schemaname="training_Assistantdegestionnaire.topic.Consulteundossier">
   <componenttype>9</componenttype>
-  <description>À utiliser dès que l’utilisateur cite un numéro de dossier (S-xxxx)</description>
+  <description>Affiche l’état complet d’un dossier de sinistre à partir de son numéro (format S-xxxx) : statut, type, montants, dates, contrat et dernières notes. À utiliser dès que l’utilisateur cite un numéro de dossier, par exemple « où en est le dossier S-0012 ? », « état du S-0003 », « résume le dossier S-0007.
+
+Si la sortie notes est "Aucune note", alors ne pas donner de fiche vide, mais simplement signifier qu'aucune note n'a été prise.</description>
   <iscustomizable>0</iscustomizable>
   <name>Consulte un dossier</name>
   <parentbotid>
