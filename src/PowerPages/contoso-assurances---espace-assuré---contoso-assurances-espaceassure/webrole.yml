@@ -1,0 +1,16 @@
+- adx_anonymoususersrole: true
+  adx_authenticatedusersrole: false
+  adx_name: Utilisateurs anonymes
+  adx_webroleid: 21a00905-4f26-4979-9409-720861528a5d
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: true
+  adx_name: Utilisateurs authentifiés
+  adx_webroleid: 39093f38-c180-4470-b810-668dcadaa835
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: false
+  adx_name: Administrateurs
+  adx_webroleid: 7764e39e-6cbf-4d8f-8913-19dda7c17e72
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: false
+  adx_name: Assuré
+  adx_webroleid: c4b44252-0fe4-f111-84e8-6045bd1ace1d

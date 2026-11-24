@@ -1,0 +1,59 @@
+<div data-component-theme="portalThemeColor1" class="row sectionBlockLayout sec-1" style="padding: 8px; margin: 0px; display: flex; flex-wrap: wrap; min-height: auto;">
+  <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+    <div class="col-md-12 columnBlockLayout" style="min-width: 250px; flex-grow: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 56px 40px;">
+      <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">Espace Assuré</span>
+      <h1 style="font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: #fff; margin-bottom: 12px;">Mes Contrats</h1>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 520px; line-height: 1.7;">Consultez ici tous les contrats auxquels vous avez souscrit, ainsi que les détails importants qui les concernent.</p>
+    </div>
+  </div>
+</div>
+<div data-component-theme="portalThemeColor2" class="row sectionBlockLayout sec-2" style="padding: 8px; margin: 0px; display: flex; flex-wrap: wrap; min-height: auto;">
+  <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+    <div class="col-md-12 columnBlockLayout" style="min-width: 250px; flex-grow: 1; display: flex; flex-direction: column; padding: 64px 40px;">
+      <div style="text-align: center; margin-bottom: 48px;">
+        <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">Vos Contrats</span>
+        <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 12px;">Liste des contrats actifs</h2>
+        <p style="color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto; line-height: 1.7;">Retrouvez ici un aperçu clair de vos contrats d'assurance en cours.</p>
+      </div>
+      {% include 'entity_list' key: 'Contrats actifs' isModern: 'true' AISummaryTitle: 'AI Insights' isAISummaryExpanded: 'true' AISummaryChartTypes: '[1,2,3,4,5]' isAISummaryEnabled: 'true' isNLSearchEnabled: 'true' rowStyle: '{"root":{"backgroundColor":"color-mix(in oklch, var(--portalThemeColor1), transparent 100%)","color":"color-mix(in oklch, var(--portalThemeColor1), transparent 0%)"}}' tableStyle: '{"border":"0px solid var(--portalThemeColor1)"}'%}
+    </div>
+  </div>
+</div>
+<div data-component-theme="portalThemeColor3" class="row sectionBlockLayout sec-3" style="padding: 8px; margin: 0px; display: flex; flex-wrap: wrap; min-height: auto;">
+  <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+    <div class="col-md-6 columnBlockLayout" style="min-width: 250px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 40px;">
+      <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(0, 0, 0, 0.75); font-weight: 600; display: block; margin-bottom: 10px;">Détails du Contrat</span>
+      <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #000000; margin-bottom: 16px;">Informations Complètes</h2>
+      <p style="color: rgba(156, 156, 156, 0.85); line-height: 1.7; padding: 8px 0;">Sélectionnez un contrat pour afficher les informations détaillées telles que la couverture, la durée, les bénéficiaires, et les conditions spécifiques.</p>
+      <button class="btn-grad button1" style="background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #ffffff; border: none; border-radius: 999px; padding: 14px 36px; font-weight: 700; font-size: 1rem; cursor: pointer; margin-top: 8px; align-self: flex-start; background-color: rgba(0, 0, 0, 1);">Voir mes contrats</button>
+    </div>
+    <div class="col-md-6 columnBlockLayout" style="min-width: 250px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 40px;"><img src="/Contrats-11.jpg" alt="Document de contrat d'assurance" class="anim-fade" style="max-width: 100%; width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 56px rgba(0,0,0,0.13);" /></div>
+  </div>
+</div>
+<div data-component-theme="portalThemeColor6" class="row sectionBlockLayout sec-6" style="padding: 8px; margin: 0px; display: flex; flex-wrap: wrap; min-height: auto;">
+  <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+    <div class="col-md-12 columnBlockLayout" style="min-width: 250px; flex-grow: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 72px 48px;">
+      <h2 style="font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; color: #fff; margin-bottom: 16px;">Besoin d'aide ?</h2>
+      <p style="color: rgba(255,255,255,0.85); max-width: 500px; line-height: 1.7; margin-bottom: 36px; padding: 8px 0;">Contactez notre service client pour toute question concernant vos contrats ou leur gestion.</p>
+      <button class="button1" style="background: rgba(255,255,255,0.5); color: var(--brand); border: none; border-radius: 999px; padding: 14px 40px; font-weight: 700; font-size: 1rem; cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">Nous contacter</button>
+    </div>
+  </div>
+</div>
+<div data-component-theme="portalThemeColor7" class="row sectionBlockLayout sec-7" style="padding: 8px; margin: 0px; display: flex; flex-wrap: wrap; min-height: auto;">
+  <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+    <div class="col-md-12 columnBlockLayout" style="min-width: 250px; flex-grow: 1; display: flex; flex-direction: column; padding: 64px 40px;">
+      <div style="text-align: center; margin-bottom: 48px;">
+        <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">FAQ</span>
+        <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 12px;">Questions fréquentes</h2>
+      </div>
+      <div style="max-width: 720px; margin: 0 auto;">
+        <div style="padding: 14px 20px; background: rgba(255,255,255,0.12); border-radius: 8px; margin-bottom: 4px; font-weight: 700; color: #fff;">Comment accéder à mes contrats ?</div>
+        <p style="padding: 12px 20px 20px; border-left: 3px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.85);">Connectez-vous à votre espace assuré avec vos identifiants pour consulter tous vos contrats.</p>
+        <div style="padding: 14px 20px; background: rgba(255,255,255,0.12); border-radius: 8px; margin-bottom: 4px; font-weight: 700; color: #fff;">Puis-je modifier mes informations personnelles ?</div>
+        <p style="padding: 12px 20px 20px; border-left: 3px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.85);">Oui, vous pouvez mettre à jour vos informations directement depuis votre espace personnel.</p>
+        <div style="padding: 14px 20px; background: rgba(255,255,255,0.12); border-radius: 8px; margin-bottom: 4px; font-weight: 700; color: #fff;">Comment contacter le support ?</div>
+        <p style="padding: 12px 20px 20px; border-left: 3px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.85);">Utilisez le bouton "Nous contacter" ci-dessus pour envoyer une demande à notre équipe d'assistance.</p>
+      </div>
+    </div>
+  </div>
+</div>

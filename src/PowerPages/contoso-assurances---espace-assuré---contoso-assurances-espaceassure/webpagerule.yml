@@ -1,0 +1,30 @@
+- adx_name: Restrict Read on Mes Contrats
+  adx_right: 2
+  adx_scope: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - c4b44252-0fe4-f111-84e8-6045bd1ace1d
+  adx_webpageaccesscontrolruleid: 4aedc384-238e-82d0-893f-b25f78319bd9
+  adx_webpageid: e3de779b-1a27-9a9a-9b64-9c821595aa60
+- adx_name: Autoriser la modification des administrateurs
+  adx_right: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - 7764e39e-6cbf-4d8f-8913-19dda7c17e72
+  adx_webpageaccesscontrolruleid: 55aced7e-8867-45cd-a380-3a260c9a941a
+  adx_webpageid: 769172aa-9dd2-40f8-964d-1fbc90cf73ef
+- adx_name: Autoriser la modification du contenu
+  adx_right: 1
+  adx_webpageaccesscontrolruleid: 64d89bb7-03e5-467c-924d-f7e12e2206f5
+- adx_name: Restrict Read on Mes Sinistres
+  adx_right: 2
+  adx_scope: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - c4b44252-0fe4-f111-84e8-6045bd1ace1d
+  adx_webpageaccesscontrolruleid: 7ba5ddfa-3cec-374b-f61a-88f12fdd28c5
+  adx_webpageid: 106eb0e6-5ac5-eb38-7af7-b3689758d022
+- adx_name: Restrict Read on Déclarer un sinistre
+  adx_right: 2
+  adx_scope: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - c4b44252-0fe4-f111-84e8-6045bd1ace1d
+  adx_webpageaccesscontrolruleid: bfb39d85-ebd6-c966-2993-af8ee527ebda
+  adx_webpageid: d6e69b8d-f499-03b9-7582-4e3e702f891c

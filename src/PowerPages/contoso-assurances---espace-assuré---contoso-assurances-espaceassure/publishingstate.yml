@@ -1,0 +1,10 @@
+- adx_displayorder: 1
+  adx_isdefault: false
+  adx_isvisible: false
+  adx_name: Brouillon
+  adx_publishingstateid: 4973fe28-14f8-4bc4-9644-bea8aafd576b
+- adx_displayorder: 2
+  adx_isdefault: true
+  adx_isvisible: true
+  adx_name: Publié
+  adx_publishingstateid: 804b4223-fd5d-4791-9058-d62f63de8ff3

@@ -1,0 +1,42 @@
+- adx_displayimageonly: false
+  adx_displayorder: 4
+  adx_displaypagechildlinks: false
+  adx_name: Déclarer un sinistre
+  adx_openinnewwindow: false
+  adx_pageid: d6e69b8d-f499-03b9-7582-4e3e702f891c
+  adx_publishingstateid: 804b4223-fd5d-4791-9058-d62f63de8ff3
+  adx_robotsfollowlink: true
+  adx_weblinkid: 0c07582b-7f39-72ca-62d6-55919cf05d25
+  adx_weblinksetid: b6824b4f-6a01-4f99-aa4a-35c121802dd1
+- adx_description: ''
+  adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: Accueil
+  adx_openinnewwindow: false
+  adx_pageid: 769172aa-9dd2-40f8-964d-1fbc90cf73ef
+  adx_publishingstateid: 804b4223-fd5d-4791-9058-d62f63de8ff3
+  adx_robotsfollowlink: true
+  adx_weblinkid: 4765634e-5904-459c-9c11-46ee2a8f2649
+  adx_weblinksetid: b6824b4f-6a01-4f99-aa4a-35c121802dd1
+- adx_displayimageonly: false
+  adx_displayorder: 3
+  adx_displaypagechildlinks: false
+  adx_name: Mes Sinistres
+  adx_openinnewwindow: false
+  adx_pageid: 106eb0e6-5ac5-eb38-7af7-b3689758d022
+  adx_publishingstateid: 804b4223-fd5d-4791-9058-d62f63de8ff3
+  adx_robotsfollowlink: true
+  adx_weblinkid: 4a02f594-72e4-c15a-6677-6ca5c5839095
+  adx_weblinksetid: b6824b4f-6a01-4f99-aa4a-35c121802dd1
+- adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_name: Mes Contrats
+  adx_openinnewwindow: false
+  adx_pageid: e3de779b-1a27-9a9a-9b64-9c821595aa60
+  adx_publishingstateid: 804b4223-fd5d-4791-9058-d62f63de8ff3
+  adx_robotsfollowlink: true
+  adx_weblinkid: 4b7d3d9e-0a27-af8e-c026-a8918c0b74bf
+  adx_weblinksetid: b6824b4f-6a01-4f99-aa4a-35c121802dd1

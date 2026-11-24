@@ -1,0 +1,16 @@
+adx_accountrelationship: 
+adx_append: true
+adx_appendto: false
+adx_contactrelationship: 
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: training_echange
+adx_entityname: Assuré – Échanges
+adx_entitypermission_webrole:
+- c4b44252-0fe4-f111-84e8-6045bd1ace1d
+adx_entitypermissionid: 2ed676da-c319-408e-835a-44aebc51134b
+adx_parententitypermission: 10ac3a66-f70c-4ed5-a303-4f178d529153
+adx_parentrelationship: training_Sinistre_training_Sinistre_training_Echange
+adx_read: true
+adx_scope: 756150003
+adx_write: false

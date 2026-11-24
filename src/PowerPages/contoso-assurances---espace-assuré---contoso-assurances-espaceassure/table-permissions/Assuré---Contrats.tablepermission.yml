@@ -1,0 +1,16 @@
+adx_accountrelationship: 
+adx_append: false
+adx_appendto: true
+adx_contactrelationship: training_contrat_assurecontact_contact
+adx_create: false
+adx_delete: false
+adx_entitylogicalname: training_contrat
+adx_entityname: Assuré - Contrats
+adx_entitypermission_webrole:
+- c4b44252-0fe4-f111-84e8-6045bd1ace1d
+adx_entitypermissionid: 1a6fe1d1-9d6a-44d5-9ac9-d99d4c20c6f9
+adx_parententitypermission: 
+adx_parentrelationship: 
+adx_read: true
+adx_scope: 756150001
+adx_write: false

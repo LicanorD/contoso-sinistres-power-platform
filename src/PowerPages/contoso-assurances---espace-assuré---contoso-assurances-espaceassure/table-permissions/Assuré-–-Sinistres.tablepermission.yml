@@ -1,0 +1,16 @@
+adx_accountrelationship: 
+adx_append: true
+adx_appendto: true
+adx_contactrelationship: training_sinistre_assurecontact_contact
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: training_sinistre
+adx_entityname: Assuré – Sinistres
+adx_entitypermission_webrole:
+- c4b44252-0fe4-f111-84e8-6045bd1ace1d
+adx_entitypermissionid: 10ac3a66-f70c-4ed5-a303-4f178d529153
+adx_parententitypermission: 
+adx_parentrelationship: 
+adx_read: true
+adx_scope: 756150001
+adx_write: false
